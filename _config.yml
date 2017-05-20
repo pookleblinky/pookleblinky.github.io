@@ -24,10 +24,7 @@ github_username:  pookleblinky
 
 # Build settings
 markdown: kramdown
-permalink: date
 theme: minima
-
-include: ["_pages"]
 
 gems:
   - jekyll-feed
