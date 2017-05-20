@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Posts
+title: Archive
 permalink: /History/
 ---
 {% assign postsByDay = 
