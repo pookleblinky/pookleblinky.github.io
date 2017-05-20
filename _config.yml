@@ -24,7 +24,7 @@ github_username:  pookleblinky
 
 # Build settings
 markdown: kramdown
-permalink: /:title/
+permalink: date
 theme: minima
 
 include: ["_pages"]
