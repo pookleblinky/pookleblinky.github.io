@@ -4,7 +4,7 @@ title: Archive
 permalink: /History/
 ---
 {% assign postsByDay = 
-site.posts | group_by_exp:"post", "post.date | date: '%A, %B %e, %Y'" %}
+    site.posts | group_by_exp:"post", "post.date | date: '%Y/%m/%e'" %}
 
 {% for day in postsByDay %}
 <h1>{{ day.name }}</h1>

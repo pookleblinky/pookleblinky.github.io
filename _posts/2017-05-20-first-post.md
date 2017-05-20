@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "First post"
-categories: meta
+tags: meta
 ---
 <p>After so long on twitter, I'm unused to longform writing, despite all my
 threads. I'm just used to expressing things 140 characters at a time, as this

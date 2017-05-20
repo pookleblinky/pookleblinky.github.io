@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Spinning it up"
-categories: meta
+tags: meta
 ---
 So, I've set up a blog. Creating it was the easy part. Configuring it turned out
 to be more difficult. [Switching from an existing Jekyll
