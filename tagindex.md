@@ -14,7 +14,8 @@ permalink: /tagindex/
   <h3 id="{{ tag }}">{{ tag }}</h3>
   <ul>
   {% for post in site.tags[tag] %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    <li><a href="{{ post.url }}">{{ post.title }} {{ post.date | date:
+    "%Y/%m/%e" }}</a></li>
   {% endfor %}
   </ul>
 {% endfor %}
