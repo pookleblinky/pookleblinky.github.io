@@ -14,18 +14,4 @@
   <author>
    <name>Pookleblinky</name></author>
   <content type="html">
-&lt;p&gt;I made a Frog branch, init&amp;rsquo;d a frog instance, and am now configuring it a bit before attempting to push it to the main site. Dunno exactly how the switch will go, but I can tell it&amp;rsquo;s already a lot nicer than Jekyll.&lt;/p&gt;&lt;a href="http://pookleblinky.github.io/2017/05/frog.html?utm_source=all&amp;amp;utm_medium=Atom"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</content></entry>
- <entry>
-  <title type="text">A 2012 blog post</title>
-  <link rel="alternate" href="http://pookleblinky.github.io/2012/01/a-2012-blog-post.html?utm_source=all&amp;utm_medium=Atom" />
-  <id>urn:http-pookleblinky-github-io:-2012-01-a-2012-blog-post-html</id>
-  <published>2012-01-01T05:00:00Z</published>
-  <updated>2012-01-01T05:00:00Z</updated>
-  <author>
-   <name>Pookleblinky</name></author>
-  <content type="html">
-&lt;p&gt;Here is an example blog post.&lt;/p&gt;
-
-&lt;p&gt;Everything after this paragraph &amp;ldquo;after the break&amp;rdquo;. On index pages and Atom feeds, it will become &amp;ldquo;Continue reading&amp;hellip;&amp;rdquo;, if you configure them to include only the summary &amp;ldquo;blurb&amp;rdquo; before the break.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;some code&lt;/code&gt;&lt;/pre&gt;&lt;a href="http://pookleblinky.github.io/2012/01/a-2012-blog-post.html?utm_source=all&amp;amp;utm_medium=Atom"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</content></entry></feed>
+&lt;p&gt;I made a Frog branch, init&amp;rsquo;d a frog instance, and am now configuring it a bit before attempting to push it to the main site. Dunno exactly how the switch will go, but I can tell it&amp;rsquo;s already a lot nicer than Jekyll.&lt;/p&gt;&lt;a href="http://pookleblinky.github.io/2017/05/frog.html?utm_source=all&amp;amp;utm_medium=Atom"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</content></entry></feed>
