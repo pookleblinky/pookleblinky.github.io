@@ -14,4 +14,38 @@
   <author>
    <name>Pookleblinky</name></author>
   <content type="html">
-&lt;p&gt;I made a Frog branch, init&amp;rsquo;d a frog instance, and am now configuring it a bit before attempting to push it to the main site. Dunno exactly how the switch will go, but I can tell it&amp;rsquo;s already a lot nicer than Jekyll.&lt;/p&gt;&lt;a href="http://pookleblinky.github.io/2017/05/frog.html?utm_source=meta&amp;amp;utm_medium=Atom"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</content></entry></feed>
+&lt;p&gt;I made a Frog branch, init&amp;rsquo;d a frog instance, and am now configuring it a bit before attempting to push it to the main site. Dunno exactly how the switch will go, but I can tell it&amp;rsquo;s already a lot nicer than Jekyll.&lt;/p&gt;&lt;a href="http://pookleblinky.github.io/2017/05/frog.html?utm_source=meta&amp;amp;utm_medium=Atom"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</content></entry>
+ <entry>
+  <title type="text">Spinning it up</title>
+  <link rel="alternate" href="http://pookleblinky.github.io/2017/05/spinning-it-up.html?utm_source=meta&amp;utm_medium=Atom" />
+  <id>urn:http-pookleblinky-github-io:-2017-05-spinning-it-up-html</id>
+  <published>2017-05-20T07:41:31Z</published>
+  <updated>2017-05-20T07:41:31Z</updated>
+  <author>
+   <name>Pookleblinky</name></author>
+  <content type="html">
+&lt;p&gt;So, I&amp;rsquo;ve set up a blog. Creating it was the easy part. Configuring it turned out to be more difficult. &lt;a href="https://stackoverflow.com/questions/31327045/switch-theme-in-an-existing-jekyll-installation"&gt;Switching from an existing Jekyll layout&lt;/a&gt; Turns out to be a pain in the ass. So, I&amp;rsquo;m just not gonna switch.&lt;/p&gt;
+
+&lt;p&gt;Then, I broke permalinks, made pages load weird by duplicating the _layouts which the default theme doesn&amp;rsquo;t require (Ah, there&amp;rsquo;s that annoying ruby magic), and then broke more shit. Repeatedly broke shit for a while, seeing what&amp;rsquo;s hidden in the ruby magic. More annoyingly, the localhost preview doesn&amp;rsquo;t indicate some things are broken, you only discover them after pushing to the server. I will probably end up changing from Jekyll, and then building my own static site generator (this seems to be the main sequence of using github pages).&lt;/p&gt;
+
+&lt;p&gt;Now I just have to figure out what to write. Years of using twitter have left me unable to write in long chunks. In threads, you still get accustomed to chunking thoughts into small enough pieces to fit into tweets. The luxurious space afforded to a blogpost is overwhelming.&lt;/p&gt;
+
+&lt;p&gt;What to write? Well, the question is really what &lt;em&gt;not&lt;/em&gt; to write. I write constantly, but in tweets and toots. I need to make writing twitter threads more annoying than writing here.&lt;/p&gt;
+
+&lt;p&gt;This is a wonderful opportunity to streamline my workflow, on every level: from editing to git. So many things that can be automated away, so much grudgework eliminated. I have a feeling many of my first posts will just be me discovering new ways to break shit, intentionally or by accident.&lt;/p&gt;</content></entry>
+ <entry>
+  <title type="text">first post</title>
+  <link rel="alternate" href="http://pookleblinky.github.io/2017/05/first-post.html?utm_source=meta&amp;utm_medium=Atom" />
+  <id>urn:http-pookleblinky-github-io:-2017-05-first-post-html</id>
+  <published>2017-05-20T07:41:31Z</published>
+  <updated>2017-05-20T07:41:31Z</updated>
+  <author>
+   <name>Pookleblinky</name></author>
+  <content type="html">
+&lt;p&gt;After so long on twitter, I&amp;rsquo;m unused to longform writing, despite all my threads. I&amp;rsquo;m used to expressing things 140 characters at a time, as this paragraph indicates.&lt;/p&gt;
+
+&lt;p&gt;This will be my first foray into longform writing in a while. I&amp;rsquo;ll probably end up parasitizing off my twitter threads.&lt;/p&gt;
+
+&lt;p&gt;About this site: I figured I wanted to blog, but I never want to leave vim/emacs to do it. Setting up a github static page with Jekyll was the laziest possible way to accomplish this. Literally took 5 minutes.&lt;/p&gt;
+
+&lt;p&gt;Edit: Immediately switched to &lt;a href="https://github.com/greghendershott/frog"&gt;Frog&lt;/a&gt;, which is a static site generator written in Racket which works on Google Pages. Spinning that up was a little more work, as GP doesn&amp;rsquo;t let you simply branch, install an alternate generator, and set that second branch as the display. Still, took only a few minutes.&lt;/p&gt;</content></entry></feed>
