@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+ <title type="text">Mistake Not: Posts tagged 'git'</title>
+ <link rel="self" href="http://pookleblinky.github.io/feeds/git.atom.xml" />
+ <link href="http://pookleblinky.github.io/tags/git.html" />
+ <id>urn:http-pookleblinky-github-io:-tags-git-html</id>
+ <updated>2017-05-21T22:59:32Z</updated>
+ <entry>
+  <title type="text">Git koans</title>
+  <link rel="alternate" href="http://pookleblinky.github.io/2017/05/git-koans.html?utm_source=git&amp;utm_medium=Atom" />
+  <id>urn:http-pookleblinky-github-io:-2017-05-git-koans-html</id>
+  <published>2017-05-21T22:59:32Z</published>
+  <updated>2017-05-21T22:59:32Z</updated>
+  <author>
+   <name>Pookleblinky</name></author>
+  <content type="html">
+&lt;p&gt;Git Koans don&amp;rsquo;t really exist. I can&amp;rsquo;t be arsed to make it, though. There are some anecdotes called Git Koans, but as far as I can tell there is nothing similar to Clojure/Ruby Koans where you get hands-on experience fixing things incrementally, from tiny mistakes all the way up the ladder.&lt;/p&gt;
+
+&lt;p&gt;Basically: &amp;ldquo;Here&amp;rsquo;s broken shit. Fix it.&amp;rdquo; &amp;ldquo;Yay, you fixed it. Here&amp;rsquo;s more broken shit. Fix it.&amp;rdquo; Turn on continuous integration and use post-commit hooks as the koan runner. Eventually, you fix all the problems in the broken repo.&lt;/p&gt;
+
+&lt;p&gt;It actually wouldn&amp;rsquo;t be very hard. You can pretty much use any kind of make system to build a repo then fuck it up per order. The result would be hands-on experience fixing fuckups in git, from small to huge. Hell: a joker shell script that takes all the commands used to evolve a repo, and randomly inserts typos and wrong commands to fuck it up. &amp;ldquo;Here&amp;rsquo;s a fork of Foo that&amp;rsquo;s been utterly fucked. Walk through its history and unfuck it.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;You could also do local/remote fuckups pretty easily too. Have a shell script that purposely messes up upstream/downstream relations, purposely screws up a merge, etc. Nightmare mode: multiple remotes are created, each randomly screwed up to simulate others trying, unsuccessfully, to fix their own messed up repos.&lt;/p&gt;
+
+&lt;p&gt;As far as I can tell, this doesn&amp;rsquo;t exist. The only time you&amp;rsquo;re ever fixing a fuckup is in actual goddamn repos during your job. The &lt;em&gt;only&lt;/em&gt; time you will ever unfuck an arbitrarily broken repo is when your ass depends on it.&lt;/p&gt;
+
+&lt;p&gt;This means that for most people, git is a &lt;a href="https://people.csail.mit.edu/sperezde/oopsla16.pdf"&gt;cargo cult&lt;/a&gt;. You don&amp;rsquo;t know how to unfuck things, you&amp;rsquo;re doing shit like cp -R repo repo.old. Imagine if you wrote code this way: the &lt;em&gt;only&lt;/em&gt; time you ever fix bugs is in production code. The only time you ever fix a bug is when your ass is on the line. You&amp;rsquo;d also do cargo cult bullshit. You&amp;rsquo;d be that happy asshole sloppily commenting out lines of code to see what&amp;rsquo;s wrong.&lt;/p&gt;
+
+&lt;p&gt;In code, it&amp;rsquo;s unthinkable that you would have no experience of fixing bugs outside of &amp;ldquo;we need this fixed yesterday&amp;rdquo; situations. Yet with git, that&amp;rsquo;s the case. No experience, at all, of unfucking repos that you don&amp;rsquo;t depend on for rent or whatever. The average git user hass no idea how to fix mistakes they make, and every mistake they do have to fix is only ever on a real repo.&lt;/p&gt;</content></entry></feed>
