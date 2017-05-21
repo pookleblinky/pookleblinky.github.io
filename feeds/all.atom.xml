@@ -1,21 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?> 
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
- <title type="text">My Blog: My Blog</title>
- <link rel="self" href="http://www.example.com/feeds/all.atom.xml" />
- <link href="http://www.example.com/index.html" />
- <id>urn:http-www-example-com:-index-html</id>
- <updated>2012-01-01T05:00:00Z</updated>
+ <title type="text">Mistake Not: Mistake Not</title>
+ <link rel="self" href="http://pookleblinky.github.io/feeds/all.atom.xml" />
+ <link href="http://pookleblinky.github.io/index.html" />
+ <id>urn:http-pookleblinky-github-io:-index-html</id>
+ <updated>2017-05-21T07:41:31Z</updated>
+ <entry>
+  <title type="text">Frog</title>
+  <link rel="alternate" href="http://pookleblinky.github.io/2017/05/frog.html?utm_source=all&amp;utm_medium=Atom" />
+  <id>urn:http-pookleblinky-github-io:-2017-05-frog-html</id>
+  <published>2017-05-21T07:41:31Z</published>
+  <updated>2017-05-21T07:41:31Z</updated>
+  <author>
+   <name>Pookleblinky</name></author>
+  <content type="html">
+&lt;p&gt;I made a Frog branch, init&amp;rsquo;d a frog instance, and am now configuring it a bit before attempting to push it to the main site. Dunno exactly how the switch will go, but I can tell it&amp;rsquo;s already a lot nicer than Jekyll.&lt;/p&gt;&lt;a href="http://pookleblinky.github.io/2017/05/frog.html?utm_source=all&amp;amp;utm_medium=Atom"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</content></entry>
  <entry>
   <title type="text">A 2012 blog post</title>
-  <link rel="alternate" href="http://www.example.com/2012/01/a-2012-blog-post.html?utm_source=all&amp;utm_medium=Atom" />
-  <id>urn:http-www-example-com:-2012-01-a-2012-blog-post-html</id>
+  <link rel="alternate" href="http://pookleblinky.github.io/2012/01/a-2012-blog-post.html?utm_source=all&amp;utm_medium=Atom" />
+  <id>urn:http-pookleblinky-github-io:-2012-01-a-2012-blog-post-html</id>
   <published>2012-01-01T05:00:00Z</published>
   <updated>2012-01-01T05:00:00Z</updated>
   <author>
-   <name>The Unknown Author</name></author>
+   <name>Pookleblinky</name></author>
   <content type="html">
 &lt;p&gt;Here is an example blog post.&lt;/p&gt;
 
 &lt;p&gt;Everything after this paragraph &amp;ldquo;after the break&amp;rdquo;. On index pages and Atom feeds, it will become &amp;ldquo;Continue reading&amp;hellip;&amp;rdquo;, if you configure them to include only the summary &amp;ldquo;blurb&amp;rdquo; before the break.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;some code&lt;/code&gt;&lt;/pre&gt;&lt;a href="http://www.example.com/2012/01/a-2012-blog-post.html?utm_source=all&amp;amp;utm_medium=Atom"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</content></entry></feed>
+&lt;pre&gt;&lt;code&gt;some code&lt;/code&gt;&lt;/pre&gt;&lt;a href="http://pookleblinky.github.io/2012/01/a-2012-blog-post.html?utm_source=all&amp;amp;utm_medium=Atom"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</content></entry></feed>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+ <title type="text">Mistake Not: Posts tagged 'scheme'</title>
+ <link rel="self" href="http://pookleblinky.github.io/feeds/scheme.atom.xml" />
+ <link href="http://pookleblinky.github.io/tags/scheme.html" />
+ <id>urn:http-pookleblinky-github-io:-tags-scheme-html</id>
+ <updated>2017-05-21T07:41:31Z</updated>
+ <entry>
+  <title type="text">Frog</title>
+  <link rel="alternate" href="http://pookleblinky.github.io/2017/05/frog.html?utm_source=scheme&amp;utm_medium=Atom" />
+  <id>urn:http-pookleblinky-github-io:-2017-05-frog-html</id>
+  <published>2017-05-21T07:41:31Z</published>
+  <updated>2017-05-21T07:41:31Z</updated>
+  <author>
+   <name>Pookleblinky</name></author>
+  <content type="html">
+&lt;p&gt;I made a Frog branch, init&amp;rsquo;d a frog instance, and am now configuring it a bit before attempting to push it to the main site. Dunno exactly how the switch will go, but I can tell it&amp;rsquo;s already a lot nicer than Jekyll.&lt;/p&gt;&lt;a href="http://pookleblinky.github.io/2017/05/frog.html?utm_source=scheme&amp;amp;utm_medium=Atom"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</content></entry></feed>

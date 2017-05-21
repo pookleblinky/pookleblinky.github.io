@@ -1,2 +1,3 @@
-http://www.example.com/2012/01/a-2012-blog-post.html
-http://www.example.com/About.html
+http://pookleblinky.github.io/2012/01/a-2012-blog-post.html
+http://pookleblinky.github.io/2017/05/frog.html
+http://pookleblinky.github.io/About.html
