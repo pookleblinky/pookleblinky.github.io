@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<rss version="2.0">
+ <channel>
+  <title>Mistake Not: Posts tagged 'scheme'</title>
+  <description>Mistake Not: Posts tagged 'scheme'</description>
+  <link>http://pookleblinky.github.io/tags/scheme.html</link>
+  <lastBuildDate>Sun, 21 May 2017 07:41:31 UT</lastBuildDate>
+  <pubDate>Sun, 21 May 2017 07:41:31 UT</pubDate>
+  <ttl>1800</ttl>
+  <item>
+   <title>Frog</title>
+   <link>http://pookleblinky.github.io/2017/05/frog.html?utm_source=scheme&amp;utm_medium=RSS</link>
+   <guid isPermaLink="false">urn:http-pookleblinky-github-io:-2017-05-frog-html</guid>
+   <pubDate>Sun, 21 May 2017 07:41:31 UT</pubDate>
+   <author>Pookleblinky</author>
+   <description>
+&lt;p&gt;I made a Frog branch, init&amp;rsquo;d a frog instance, and am now configuring it a bit before attempting to push it to the main site. Dunno exactly how the switch will go, but I can tell it&amp;rsquo;s already a lot nicer than Jekyll.&lt;/p&gt;&lt;a href="http://pookleblinky.github.io/2017/05/frog.html?utm_source=scheme&amp;amp;utm_medium=RSS"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</description></item></channel></rss>
