@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+ <title type="text">Mistake Not: Posts tagged 'resources'</title>
+ <link rel="self" href="http://pookleblinky.github.io/feeds/resources.atom.xml" />
+ <link href="http://pookleblinky.github.io/tags/resources.html" />
+ <id>urn:http-pookleblinky-github-io:-tags-resources-html</id>
+ <updated>2017-05-23T21:39:35Z</updated>
+ <entry>
+  <title type="text">Exercism</title>
+  <link rel="alternate" href="http://pookleblinky.github.io/2017/05/exercism.html?utm_source=resources&amp;utm_medium=Atom" />
+  <id>urn:http-pookleblinky-github-io:-2017-05-exercism-html</id>
+  <published>2017-05-23T21:39:35Z</published>
+  <updated>2017-05-23T21:39:35Z</updated>
+  <author>
+   <name>Pookleblinky</name></author>
+  <content type="html">
+&lt;p&gt;On #Racket, samth linked to &lt;a href="http://exercism.io/languages/racket"&gt;Exercism&lt;/a&gt;, a wonderful analog to $LANG Koans. Each exercise is a basic, small program which you code by satisfying the unit tests. Unlike, say, Clojure Koans, &lt;a href="http://exercism.io/languages/clojure"&gt;the Clojure Track of Exercism&lt;/a&gt; has you create 58 programs of various degrees of complexity, rather than a running through individual test assertions.&lt;/p&gt;
+
+&lt;p&gt;You code enough to pass the tests, then submit. You can keep tweaking your solution, and keep submitting it. On your dashboard, you&amp;rsquo;ll be able to see how your solution has evolved over time. You can also look at how other people solved the problem, discuss solutions, etc.&lt;/p&gt;
+
+&lt;p&gt;Exercism, with its emphasis on creating programs and then discussing them, is an even better way to introduce a language than a standard koan runner. Especially considering that if you already know the language, instead of solving the exercises you can easily submit new ones for others to solve.&lt;/p&gt;</content></entry></feed>

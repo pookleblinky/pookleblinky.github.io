@@ -4,9 +4,21 @@
   <title>Mistake Not: Mistake Not</title>
   <description>Mistake Not: Mistake Not</description>
   <link>http://pookleblinky.github.io/index.html</link>
-  <lastBuildDate>Sun, 21 May 2017 22:59:32 UT</lastBuildDate>
-  <pubDate>Sun, 21 May 2017 22:59:32 UT</pubDate>
+  <lastBuildDate>Tue, 23 May 2017 21:39:35 UT</lastBuildDate>
+  <pubDate>Tue, 23 May 2017 21:39:35 UT</pubDate>
   <ttl>1800</ttl>
+  <item>
+   <title>Exercism</title>
+   <link>http://pookleblinky.github.io/2017/05/exercism.html?utm_source=all&amp;utm_medium=RSS</link>
+   <guid isPermaLink="false">urn:http-pookleblinky-github-io:-2017-05-exercism-html</guid>
+   <pubDate>Tue, 23 May 2017 21:39:35 UT</pubDate>
+   <author>Pookleblinky</author>
+   <description>
+&lt;p&gt;On #Racket, samth linked to &lt;a href="http://exercism.io/languages/racket"&gt;Exercism&lt;/a&gt;, a wonderful analog to $LANG Koans. Each exercise is a basic, small program which you code by satisfying the unit tests. Unlike, say, Clojure Koans, &lt;a href="http://exercism.io/languages/clojure"&gt;the Clojure Track of Exercism&lt;/a&gt; has you create 58 programs of various degrees of complexity, rather than a running through individual test assertions.&lt;/p&gt;
+
+&lt;p&gt;You code enough to pass the tests, then submit. You can keep tweaking your solution, and keep submitting it. On your dashboard, you&amp;rsquo;ll be able to see how your solution has evolved over time. You can also look at how other people solved the problem, discuss solutions, etc.&lt;/p&gt;
+
+&lt;p&gt;Exercism, with its emphasis on creating programs and then discussing them, is an even better way to introduce a language than a standard koan runner. Especially considering that if you already know the language, instead of solving the exercises you can easily submit new ones for others to solve.&lt;/p&gt;</description></item>
   <item>
    <title>Git koans</title>
    <link>http://pookleblinky.github.io/2017/05/git-koans.html?utm_source=all&amp;utm_medium=RSS</link>
