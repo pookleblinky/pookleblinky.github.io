@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<rss version="2.0">
+ <channel>
+  <title>Mistake Not: Posts tagged 'dev environment'</title>
+  <description>Mistake Not: Posts tagged 'dev environment'</description>
+  <link>http://pookleblinky.github.io/tags/dev-environment.html</link>
+  <lastBuildDate>Fri, 26 May 2017 07:04:55 UT</lastBuildDate>
+  <pubDate>Fri, 26 May 2017 07:04:55 UT</pubDate>
+  <ttl>1800</ttl>
+  <item>
+   <title>languages</title>
+   <link>http://pookleblinky.github.io/2017/05/languages.html?utm_source=dev-environment&amp;utm_medium=RSS</link>
+   <guid isPermaLink="false">urn:http-pookleblinky-github-io:-2017-05-languages-html</guid>
+   <pubDate>Fri, 26 May 2017 07:04:55 UT</pubDate>
+   <author>Pookleblinky</author>
+   <description>
+&lt;p&gt;I tend to get flustered when learning languages. I bounce from one to another, trying the same thing in each. &amp;ldquo;oh cool how would I do this in foo? Ah, gotta yakshave my emacs for bar&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Little ends up getting done, and I end up working at a cartoonishly slow pace as I bounce around playing with everything.&lt;/p&gt;
+
+&lt;p&gt;Right now, I&amp;rsquo;m focusing on Racket, Elixir, Clojure, and Common Lisp. oCaml, LFE, and Haskell as background noise, not the main focus.&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s a lot of opportunity to get distracted on several levels, from other languages to yakshaving dev environments and workflows for them.&lt;/p&gt;
+
+&lt;p&gt;For instance, my normal workflow involves vim-slime and tmux. Vim-slime sends text to a specified tmux pane, it doesn&amp;rsquo;t know or care what repl is on the other end. It doesn&amp;rsquo;t know or care about nrepl or swank or any of that. Just where to dump the text. I prefer this over magic. Well, in LFE slurping a file into the repl dumps all previously slurped macros and defs. The repl is more stateful than most, so the workflow is a little awkward. I was pondering how to tweak vim-slime to have an LFE mode that would on C-c C-c first save, then send over the text (c "@%"), or something. I could yakshave on this happily, but it&amp;rsquo;s a distraction.&lt;/p&gt;
+
+&lt;p&gt;My attempted solution is simple. For focus, I&amp;rsquo;m using exercism. Each language is on a different track, each has defined tasks to accomplish and progress is tracked. Most tracks have similar tasks, which nicely satisfies my &amp;ldquo;oh man I wonder how I&amp;rsquo;d do this in foo&amp;rdquo; impulse, but in a structured and focused way. Yakshaving is kept to a minimum: while working in racket, I can pop over to another pane, type &amp;ldquo;langjournal,&amp;rdquo; and note a todo about yakshaving vim to work better with it. Later, I can yakshave, but I can keep focused on what I was doing instead of falling down the rabbit hole.&lt;/p&gt;
+
+&lt;p&gt;While doing the erlang track, I saw that rebar.config hardcoded rebar3. I did the task, gsubbed rebar3 to rebar (v2 is what I had), and ran the tests. They passed, I made a note. Went on #erlang, asked about rebar3, and decided to upgrade. I bootstrapped it in less than a minute, reverted rebar.config, and it worked as intended. Minimal yakshaving.&lt;/p&gt;
+
+&lt;p&gt;I figure as long as I keep things structured, push yakshaving out of the way into its own activity (&amp;ldquo;today I&amp;rsquo;m gonna get vim to work better with lfe&amp;rdquo;), and avoid temptation, I&amp;rsquo;ll have a much nicer time than my usual habits provide.&lt;/p&gt;
+
+&lt;p&gt;This blog is going to be part of my workflow, forcing me to maintain a coherency which is usually lost reinventing a local PLEAC.&lt;/p&gt;</description></item></channel></rss>
