@@ -4,9 +4,33 @@
   <title>Mistake Not: Mistake Not</title>
   <description>Mistake Not: Mistake Not</description>
   <link>http://pookleblinky.github.io/index.html</link>
-  <lastBuildDate>Fri, 26 May 2017 07:04:55 UT</lastBuildDate>
-  <pubDate>Fri, 26 May 2017 07:04:55 UT</pubDate>
+  <lastBuildDate>Fri, 26 May 2017 13:53:03 UT</lastBuildDate>
+  <pubDate>Fri, 26 May 2017 13:53:03 UT</pubDate>
   <ttl>1800</ttl>
+  <item>
+   <title>clojure annoyances, 1</title>
+   <link>http://pookleblinky.github.io/2017/05/clojure-annoyances-1.html?utm_source=all&amp;utm_medium=RSS</link>
+   <guid isPermaLink="false">urn:http-pookleblinky-github-io:-2017-05-clojure-annoyances-1-html</guid>
+   <pubDate>Fri, 26 May 2017 13:53:03 UT</pubDate>
+   <author>Pookleblinky</author>
+   <description>
+&lt;p&gt;I use Crouton on a chromebook. Clojure is a pain in the ass on low-end devices. Just annoying as hell, easily hogs all cycles. Lein spins up its own jvm, which adds to the startup time. On a low-end device, you&amp;rsquo;re gonna spin it down in order to such as watch a youtube video, so you really will not have long enough lein sessions to justify such a slow startup. On a heftier box, you don&amp;rsquo;t have to juggle things like that.&lt;/p&gt;
+
+&lt;p&gt;The stacktraces, holy shit. I hate Java. Every time I see 100+ lines of java vomitspit I see clojure telling me that it is not a real lisp, that it fundamentally will never understand concurrency, and that it does not intend to follow the Lisp Main Sequence.&lt;/p&gt;
+
+&lt;p&gt;The Lisp Main Sequence: All lisps inevitably try to consume their own stack. The normal evolution of a lisp is to ruthlessly divorce itself from its implementation, and become pure lisp. Lisps are like facehuggers. Every normal lisp wants to be lisp all the way down. This isn&amp;rsquo;t a technical thing, it&amp;rsquo;s social. Lisp hackers want to be able to hack lisp all the way down to the silicon. It&amp;rsquo;s engrained into the mindset. Lisp is meant to take over all that it sees, drive its enemies before them, etc. Deep down, even the smallest lisp wants to grow up to be a Genera lisp machine.&lt;/p&gt;
+
+&lt;p&gt;The mindset of clojure devs, meanwhile, is not the normal lisp mindset. After almost a decade, they have not taken over the stack. In any normal lisp, a year is sufficient. Clojure devs do not think like normal lispers; something is missing in their personalities. It&amp;rsquo;s downright unsettling to think that for almost a decade clojure hackers have dealt with java regurgitating at them in every stacktrace and &lt;em&gt;put up with it&lt;/em&gt; instead of fixing it by replacing it with more clojure. It&amp;rsquo;s disturbing to think of the sheer volume of java vomitspit they have dealt with over the years as something that is perfectly normal in a lisp. It points to a fundamental defect, an inability to really grok lisp. It&amp;rsquo;s lisp for pointy-haired bosses. It&amp;rsquo;s lisp for people who wear ties. Horrifying.&lt;/p&gt;
+
+&lt;p&gt;Clojure seems to be at odds with its users. Half are from java, and don&amp;rsquo;t see anything wrong with java being spat at them. Half are from lisps, and &lt;a href="http://winestockwebdesign.com/Essays/Lisp_Curse.html"&gt;inevitably try to hack their own mutually incompatible solution&lt;/a&gt;. The result is that there will never be a single, united front behind which the pre-gamed lispers can rally persuasively enough to get its benevolent dictator for life to adopt. The result is an incredible inertia compared to most other lisps. The userbase may grow, the number of libraries written in clojure may grow, but fundamentally it will not embrace the main sequence of lisp evolution.&lt;/p&gt;
+
+&lt;p&gt;Parodoxically, the inherent expressiveness of clojure (it is still a lisp after all), guarantees that a fuckload of effort will go toward scratching personal itches. New libraries and build tools will appear overnight, because in lisps they can appear overnight. But each must beat not only the java, but the other lisp itch-scratching. This will result in dissatisfied lispers bleeding out of the community in search of a lispier lisp. Before they leave, however, they&amp;rsquo;ll have produced so much sheer output in attempting to scratch their itches that the vast space of options will terrify the java faction. The java faction will similarly bleed off, in search of a more ordered and boss-friendly language.&lt;/p&gt;
+
+&lt;p&gt;Who remains? Those who are comfortable with java spewing shit at them, and who are not sufficiently lispy to attempt to hack up a solution in a weekend. Those who for whatever reason are at the borderline between the two mutually-exclusive poles of clojure&amp;rsquo;s community. In &lt;a href="https://plus.google.com/110981030061712822816/posts/KaSKeg4vQtz"&gt;Yegge&amp;rsquo;s political spectrum of programming languages&lt;/a&gt;, clojure is that weird dude who appeals to both anarchists and the alt-right.&lt;/p&gt;
+
+&lt;p&gt;I see clojure increasing in popularity, but I don&amp;rsquo;t see it changing its fundamentally divided nature. It&amp;rsquo;ll have upswings in popularity, but it&amp;rsquo;ll be continually bleeding from both ends. This hemorrhaging may not kill it, but it guarantees inertia. The java people will bleed off into Go or something, the lisp freaks will bleed off into Elixir or something, and the core clojure community will remain just as eventually dissatisfying to both.&lt;/p&gt;
+
+&lt;p&gt;Note: I am still interested in clojure, despite these annoyances.&lt;/p&gt;</description></item>
   <item>
    <title>languages</title>
    <link>http://pookleblinky.github.io/2017/05/languages.html?utm_source=all&amp;utm_medium=RSS</link>
