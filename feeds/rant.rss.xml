@@ -4,9 +4,29 @@
   <title>Mistake Not: Posts tagged 'rant'</title>
   <description>Mistake Not: Posts tagged 'rant'</description>
   <link>http://pookleblinky.github.io/tags/rant.html</link>
-  <lastBuildDate>Fri, 26 May 2017 13:53:03 UT</lastBuildDate>
-  <pubDate>Fri, 26 May 2017 13:53:03 UT</pubDate>
+  <lastBuildDate>Sat, 27 May 2017 08:23:28 UT</lastBuildDate>
+  <pubDate>Sat, 27 May 2017 08:23:28 UT</pubDate>
   <ttl>1800</ttl>
+  <item>
+   <title>clojure rant, 2</title>
+   <link>http://pookleblinky.github.io/2017/05/clojure-rant-2.html?utm_source=rant&amp;utm_medium=RSS</link>
+   <guid isPermaLink="false">urn:http-pookleblinky-github-io:-2017-05-clojure-rant-2-html</guid>
+   <pubDate>Sat, 27 May 2017 08:23:28 UT</pubDate>
+   <author>Pookleblinky</author>
+   <description>
+&lt;p&gt;Clojure is an ugly, sloppy hack on top of Java that should shame anyone who has ever written a lisp interpreter in any language. The core code is sloppy and unprofessional, the leaky abstraction of the stacktrace would get you failed in any compiler course. I mean it. There are weekend hacks of scheme compilers inside Java that do not expose the implementation so blatantly. It&amp;rsquo;s one thing to do so to push out something as fast as possible, but to almost a decade later still not see that sloppiness as a problem is inexcusable. &lt;a href="http://norvig.com/jscheme.html"&gt;Here&amp;rsquo;s Peter Norvig&amp;rsquo;s implementation of Scheme in Java&lt;/a&gt;. Notice how he took pride in his work.&lt;/p&gt;
+
+&lt;p&gt;Clojure is lisp for people who literally do not know what a lisp is supposed to be like. It&amp;rsquo;s as much a failure as Arc, except that arc would have passed a freshman CS course. Arc &lt;em&gt;still&lt;/em&gt; shows better attention to implementation detail than Clojure.&lt;/p&gt;
+
+&lt;p&gt;Clojure: what a &lt;a href="https://pookleblinky.github.io/2017/05/Clojure-annoyances-1.html"&gt;Java person&amp;rsquo;s idea of a lisp is&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Clojure is an abomination, and that is probably why it&amp;rsquo;ll surpass all common lisps combined. It&amp;rsquo;s the php of lisps. If you&amp;rsquo;re a teen, you should probably learn Clojure for the same reason your parents learned php. And when you get older, you&amp;rsquo;ll be able to laugh and cringe at how much needlessly sloppy, krufty bullshit you had thought was perfectly normal. Clojure: php for people who think they&amp;rsquo;re better than php programmers.&lt;/p&gt;
+
+&lt;p&gt;Now consider all the amazing lispy stuff being done in Clojure by future Elixir devs. Because it&amp;rsquo;s a lisp, even a shitty one, they are able to do incredible things which absolutely &lt;em&gt;terrify&lt;/em&gt; their counterparts who arrived in Clojure from Java. That is a testament to lisp, that even in such a bad lisp people can do incredibly productive, cool things. All of these people will eventually leave Clojure and find a better lisp, and leave behind warehouses of interesting, mindbending lispy code that half of clojurians will regard with religious terror, like powerful magical artifacts. Those on the other end of the spectrum will leave for a more boss-friendly language and dev environment like Go. What will be left, the eternal core of Clojure, will be people who are content with using a bad lisp. The goldilocks programmer, stuck in the middle, who simply puts up with the glaring warts and unfinished, sharp edges. Who shrugs while pounding a nail using a garden gnome instead of a hammer, but accepts that it&amp;rsquo;s better than whatever they&amp;rsquo;d be doing in Go or such.&lt;/p&gt;
+
+&lt;p&gt;The goldilocks Clojure programmer is one for whom Clojure is their first functional language, first serious use of lisp outside of a hobby since college, and who has suffered through a boss-friendly language for a bit before arriving in Clojure. This person doesn&amp;rsquo;t know what normal functional languages or lisps or like, but does know what the lack of Java is like. Unfortunately, they&amp;rsquo;ve normalized Java enough that they don&amp;rsquo;t notice how much squirts out of their code. This person will stay, outlasting the lisp weenies who arrive in a shower of happy parentheses and leave just as suddenly. This person will stay, outlasting their colleagues who spent more time in cubicle hell than they did, and who retreat to a more corporate language. This person will not have any sufficient motivation to fix either the errors the lisp weenies see, or the errors the Java people see.&lt;/p&gt;
+
+&lt;p&gt;Clojure is, almost by design, guaranteed to experience evaporative cooling from both ends of the political spectrum of coding. It&amp;rsquo;s an alt-center language, it&amp;rsquo;s that weird guy who claims to be both an anarchist and a Moldbugian. It&amp;rsquo;s a gloriously failed lisp that will almost certainly expose more people to lisp than any other dialect has. Just like php exposed an entire generation to their first, terrible, programming language.&lt;/p&gt;</description></item>
   <item>
    <title>clojure annoyances, 1</title>
    <link>http://pookleblinky.github.io/2017/05/clojure-annoyances-1.html?utm_source=rant&amp;utm_medium=RSS</link>

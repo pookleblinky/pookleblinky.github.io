@@ -3,14 +3,14 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Posts tagged 'clojure'</title>
-    <meta name="description" content="Posts tagged 'clojure'">
+    <title>clojure rant, 2</title>
+    <meta name="description" content="Clojure is an ugly, sloppy hack on top of Java that should shame anyone who has ever written a lisp interpreter in any language. The core code is sloppy and unprofessional, the leaky abstraction of the stacktrace would get you failed in any compiler cours...">
     <meta name="author"      content="Pookleblinky">
-    <meta name="keywords"    content="clojure">
+    <meta name="keywords"    content="rant, clojure">
     <meta name="viewport"    content="width=device-width, initial-scale=1.0">
     <link rel="icon"      href="/favicon.ico">
-    <link rel="canonical" href="http://pookleblinky.github.io/tags/clojure.html">
-
+    <link rel="canonical" href="http://pookleblinky.github.io/2017/05/clojure-rant-2.html">
+    <link rel="next" href="/2017/05/clojure-annoyances-1.html">
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
@@ -19,9 +19,9 @@
     <link rel="stylesheet" type="text/css" href="/css/custom.css">
     <!-- Feeds -->
     <link rel="alternate" type="application/atom+xml"
-          href="/feeds/clojure.atom.xml" title="Atom Feed">
+          href="/feeds/all.atom.xml" title="Atom Feed">
     <link rel="alternate" type="application/rss+xml"
-          href="/feeds/clojure.rss.xml" title="RSS Feed">
+          href="/feeds/all.rss.xml" title="RSS Feed">
     <!-- JS -->
     <script type="text/javascript">
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -85,8 +85,8 @@
             <li>
               <a href="/About.html">About</a>
             </li> 
-            <li><a href="/feeds/clojure.atom.xml">Atom</a></li>
-            <li><a href="/feeds/clojure.rss.xml">RSS</a></li>
+            <li><a href="/feeds/all.atom.xml">Atom</a></li>
+            <li><a href="/feeds/all.rss.xml">RSS</a></li>
           </ul>
         </div>
       </div>
@@ -99,11 +99,11 @@
 
 
 
-          <h1>Posts tagged <em>clojure</em></h1>
+
 
           <article>
   <header>
-    <h2><a href='/2017/05/clojure-rant-2.html'>clojure rant, 2</a></h2>
+    <h1>clojure rant, 2</h1>
     <p class='date-and-tags'>
 <time datetime="2017-05-27" pubdate="true">2017-05-27</time> :: <span class="tags"><a href="/tags/rant.html">rant</a>, <a href="/tags/clojure.html">clojure</a></span></p>
     <p class='authors'>By: <span class="authors">Pookleblinky</span></p>
@@ -122,34 +122,30 @@
 <p>The goldilocks Clojure programmer is one for whom Clojure is their first functional language, first serious use of lisp outside of a hobby since college, and who has suffered through a boss-friendly language for a bit before arriving in Clojure. This person doesn&rsquo;t know what normal functional languages or lisps or like, but does know what the lack of Java is like. Unfortunately, they&rsquo;ve normalized Java enough that they don&rsquo;t notice how much squirts out of their code. This person will stay, outlasting the lisp weenies who arrive in a shower of happy parentheses and leave just as suddenly. This person will stay, outlasting their colleagues who spent more time in cubicle hell than they did, and who retreat to a more corporate language. This person will not have any sufficient motivation to fix either the errors the lisp weenies see, or the errors the Java people see.</p>
 
 <p>Clojure is, almost by design, guaranteed to experience evaporative cooling from both ends of the political spectrum of coding. It&rsquo;s an alt-center language, it&rsquo;s that weird guy who claims to be both an anarchist and a Moldbugian. It&rsquo;s a gloriously failed lisp that will almost certainly expose more people to lisp than any other dialect has. Just like php exposed an entire generation to their first, terrible, programming language.</p>
+  <footer>
+        <script type="text/javascript">
+          !function(d,s,id){
+              var js,fjs=d.getElementsByTagName(s)[0];
+              if(!d.getElementById(id)){
+                  js=d.createElement(s);
+                  js.id=id;
+                  js.src="//platform.twitter.com/widgets.js";
+                  fjs.parentNode.insertBefore(js,fjs);
+              }
+          }(document,"script","twitter-wjs");
+        </script>
+        <a href="https://twitter.com/share"
+           class="twitter-share-button"
+           data-url="http://pookleblinky.github.io/2017/05/clojure-rant-2.html"
+           data-dnt="true">
+          "Tweet"</a>
+        <ul class="pager">
 
-</article>
-<article>
-  <header>
-    <h2><a href='/2017/05/clojure-annoyances-1.html'>clojure annoyances, 1</a></h2>
-    <p class='date-and-tags'>
-<time datetime="2017-05-26" pubdate="true">2017-05-26</time> :: <span class="tags"><a href="/tags/clojure.html">clojure</a>, <a href="/tags/rant.html">rant</a></span></p>
-    <p class='authors'>By: <span class="authors">Pookleblinky</span></p>
-  </header>
-
-<p>I use Crouton on a chromebook. Clojure is a pain in the ass on low-end devices. Just annoying as hell, easily hogs all cycles. Lein spins up its own jvm, which adds to the startup time. On a low-end device, you&rsquo;re gonna spin it down in order to such as watch a youtube video, so you really will not have long enough lein sessions to justify such a slow startup. On a heftier box, you don&rsquo;t have to juggle things like that.</p>
-
-<p>The stacktraces, holy shit. I hate Java. Every time I see 100+ lines of java vomitspit I see clojure telling me that it is not a real lisp, that it fundamentally will never understand concurrency, and that it does not intend to follow the Lisp Main Sequence.</p>
-
-<p>The Lisp Main Sequence: All lisps inevitably try to consume their own stack. The normal evolution of a lisp is to ruthlessly divorce itself from its implementation, and become pure lisp. Lisps are like facehuggers. Every normal lisp wants to be lisp all the way down. This isn&rsquo;t a technical thing, it&rsquo;s social. Lisp hackers want to be able to hack lisp all the way down to the silicon. It&rsquo;s engrained into the mindset. Lisp is meant to take over all that it sees, drive its enemies before them, etc. Deep down, even the smallest lisp wants to grow up to be a Genera lisp machine.</p>
-
-<p>The mindset of clojure devs, meanwhile, is not the normal lisp mindset. After almost a decade, they have not taken over the stack. In any normal lisp, a year is sufficient. Clojure devs do not think like normal lispers; something is missing in their personalities. It&rsquo;s downright unsettling to think that for almost a decade clojure hackers have dealt with java regurgitating at them in every stacktrace and <em>put up with it</em> instead of fixing it by replacing it with more clojure. It&rsquo;s disturbing to think of the sheer volume of java vomitspit they have dealt with over the years as something that is perfectly normal in a lisp. It points to a fundamental defect, an inability to really grok lisp. It&rsquo;s lisp for pointy-haired bosses. It&rsquo;s lisp for people who wear ties. Horrifying.</p>
-
-<p>Clojure seems to be at odds with its users. Half are from java, and don&rsquo;t see anything wrong with java being spat at them. Half are from lisps, and <a href="http://winestockwebdesign.com/Essays/Lisp_Curse.html">inevitably try to hack their own mutually incompatible solution</a>. The result is that there will never be a single, united front behind which the pre-gamed lispers can rally persuasively enough to get its benevolent dictator for life to adopt. The result is an incredible inertia compared to most other lisps. The userbase may grow, the number of libraries written in clojure may grow, but fundamentally it will not embrace the main sequence of lisp evolution.</p>
-
-<p>Parodoxically, the inherent expressiveness of clojure (it is still a lisp after all), guarantees that a fuckload of effort will go toward scratching personal itches. New libraries and build tools will appear overnight, because in lisps they can appear overnight. But each must beat not only the java, but the other lisp itch-scratching. This will result in dissatisfied lispers bleeding out of the community in search of a lispier lisp. Before they leave, however, they&rsquo;ll have produced so much sheer output in attempting to scratch their itches that the vast space of options will terrify the java faction. The java faction will similarly bleed off, in search of a more ordered and boss-friendly language.</p>
-
-<p>Who remains? Those who are comfortable with java spewing shit at them, and who are not sufficiently lispy to attempt to hack up a solution in a weekend. Those who for whatever reason are at the borderline between the two mutually-exclusive poles of clojure&rsquo;s community. In <a href="https://plus.google.com/110981030061712822816/posts/KaSKeg4vQtz">Yegge&rsquo;s political spectrum of programming languages</a>, clojure is that weird dude who appeals to both anarchists and the alt-right.</p>
-
-<p>I see clojure increasing in popularity, but I don&rsquo;t see it changing its fundamentally divided nature. It&rsquo;ll have upswings in popularity, but it&rsquo;ll be continually bleeding from both ends. This hemorrhaging may not kill it, but it guarantees inertia. The java people will bleed off into Go or something, the lisp freaks will bleed off into Elixir or something, and the core clojure community will remain just as eventually dissatisfying to both.</p>
-
-<p>Note: I am still interested in clojure, despite these annoyances.</p>
-
+        <li class="next">
+          <a href="/2017/05/clojure-annoyances-1.html"><em>clojure annoyances, 1</em> &rarr;</a>
+        </li>
+        </ul>
+  </footer>
 </article>
         </div>
       </div>
