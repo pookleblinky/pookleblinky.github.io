@@ -14,9 +14,24 @@
    <pubDate>Mon, 29 May 2017 17:13:40 UT</pubDate>
    <author>Pookleblinky</author>
    <description>
-&lt;p&gt;I&amp;rsquo;m spending some time getting org-mode configured the way I want. I&amp;rsquo;m trying to keep things as simple as possible, given how much yakshave potential there is in org mode. I have only a few files in ~/org:  orgfile.org  blog.org  code.org  refile.org&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m spending some time getting org-mode configured the way I want. I&amp;rsquo;m trying to keep things as simple as possible, given how much yakshave potential there is in org mode. I have only a few files in ~/org:&lt;/p&gt;
 
-&lt;p&gt;Orgfile.org, which is the default general agenda file. It&amp;rsquo;s structured like this:  datetree  links  notes  tasks  orgstuff My blog.org is just a datetree.&lt;/p&gt;
+&lt;ul&gt;
+ &lt;li&gt;orgfile&lt;/li&gt;
+ &lt;li&gt;blog.org&lt;/li&gt;
+ &lt;li&gt;code.org&lt;/li&gt;
+ &lt;li&gt;refile.org&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;Orgfile.org, which is the default general agenda file. It&amp;rsquo;s structured like this:&lt;/p&gt;
+
+&lt;ul&gt;
+ &lt;li&gt;datetree&lt;/li&gt;
+ &lt;li&gt;links&lt;/li&gt;
+ &lt;li&gt;notes&lt;/li&gt;
+ &lt;li&gt;tasks&lt;/li&gt;
+ &lt;li&gt;orgstuff&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;My blog.org is just a datetree.&lt;/p&gt;
 
 &lt;p&gt;Code.org is tough to figure out how to structure it. I initially thought of organizing by language, but I don&amp;rsquo;t like how that lacks telos. It encourages dicking around with no goal, just bouncing from thing to thing. I could organize by project, but that similarly lacks focus if there are multiple projects to bounce around in. I settled on just a datetree and tags. A datetree encourages a daily log of what I intend to do, what I actually did, and where I am going. I can just filter by tags and date until this becomes insufficient and I need to split off a project, in which case I&amp;rsquo;d rather add it to code.org instead of making a new orgfile. Again, I want to try as hard as possible to discourage dicking around bouncing from one thing to another without a goal.&lt;/p&gt;</description></item>
   <item>
