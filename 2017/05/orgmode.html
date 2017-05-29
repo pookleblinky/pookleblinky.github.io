@@ -3,15 +3,15 @@
   <head>
 
     <meta charset="utf-8">
-    <title>clojure rant, 2</title>
-    <meta name="description" content="Clojure is an ugly, sloppy hack on top of Java that should shame anyone who has ever written a lisp interpreter in any language. The core code is sloppy and unprofessional, the leaky abstraction of the stacktrace would get you failed in any compiler cours...">
+    <title>orgmode</title>
+    <meta name="description" content="I'm spending some time getting org-mode configured the way I want. I'm trying to keep things as simple as possible, given how much yakshave potential there is in org mode. I have only a few files in ~/org:  orgfile.org  blog.org  code.org  refile.org  Org...">
     <meta name="author"      content="Pookleblinky">
-    <meta name="keywords"    content="rant, clojure">
+    <meta name="keywords"    content="Emacs, workflow, yakshaving">
     <meta name="viewport"    content="width=device-width, initial-scale=1.0">
     <link rel="icon"      href="/favicon.ico">
-    <link rel="canonical" href="http://pookleblinky.github.io/2017/05/clojure-rant-2.html">
-    <link rel="next" href="/2017/05/clojure-annoyances-1.html">
-    <link rel="prev" href="/2017/05/orgmode.html">
+    <link rel="canonical" href="http://pookleblinky.github.io/2017/05/orgmode.html">
+    <link rel="next" href="/2017/05/clojure-rant-2.html">
+
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/css/pygments.css">
@@ -107,25 +107,17 @@
 
           <article>
   <header>
-    <h1>clojure rant, 2</h1>
+    <h1>orgmode</h1>
     <p class='date-and-tags'>
-<time datetime="2017-05-27" pubdate="true">2017-05-27</time> :: <span class="tags"><a href="/tags/rant.html">rant</a>, <a href="/tags/clojure.html">clojure</a></span></p>
+<time datetime="2017-05-29" pubdate="true">2017-05-29</time> :: <span class="tags"><a href="/tags/Emacs.html">Emacs</a>, <a href="/tags/workflow.html">workflow</a>, <a href="/tags/yakshaving.html">yakshaving</a></span></p>
     <p class='authors'>By: <span class="authors">Pookleblinky</span></p>
   </header>
 
-<p>Clojure is an ugly, sloppy hack on top of Java that should shame anyone who has ever written a lisp interpreter in any language. The core code is sloppy and unprofessional, the leaky abstraction of the stacktrace would get you failed in any compiler course. I mean it. There are weekend hacks of scheme compilers inside Java that do not expose the implementation so blatantly. It&rsquo;s one thing to do so to push out something as fast as possible, but to almost a decade later still not see that sloppiness as a problem is inexcusable. <a href="http://norvig.com/jscheme.html">Here&rsquo;s Peter Norvig&rsquo;s implementation of Scheme in Java</a>. Notice how he took pride in his work.</p>
+<p>I&rsquo;m spending some time getting org-mode configured the way I want. I&rsquo;m trying to keep things as simple as possible, given how much yakshave potential there is in org mode. I have only a few files in ~/org:  orgfile.org  blog.org  code.org  refile.org</p>
 
-<p>Clojure is lisp for people who literally do not know what a lisp is supposed to be like. It&rsquo;s as much a failure as Arc, except that arc would have passed a freshman CS course. Arc <em>still</em> shows better attention to implementation detail than Clojure.</p>
+<p>Orgfile.org, which is the default general agenda file. It&rsquo;s structured like this:  datetree  links  notes  tasks  orgstuff My blog.org is just a datetree.</p>
 
-<p>Clojure: what a <a href="https://pookleblinky.github.io/2017/05/Clojure-annoyances-1.html">Java person&rsquo;s idea of a lisp is</a>.</p>
-
-<p>Clojure is an abomination, and that is probably why it&rsquo;ll surpass all common lisps combined. It&rsquo;s the php of lisps. If you&rsquo;re a teen, you should probably learn Clojure for the same reason your parents learned php. And when you get older, you&rsquo;ll be able to laugh and cringe at how much needlessly sloppy, krufty bullshit you had thought was perfectly normal. Clojure: php for people who think they&rsquo;re better than php programmers.</p>
-
-<p>Now consider all the amazing lispy stuff being done in Clojure by future Elixir devs. Because it&rsquo;s a lisp, even a shitty one, they are able to do incredible things which absolutely <em>terrify</em> their counterparts who arrived in Clojure from Java. That is a testament to lisp, that even in such a bad lisp people can do incredibly productive, cool things. All of these people will eventually leave Clojure and find a better lisp, and leave behind warehouses of interesting, mindbending lispy code that half of clojurians will regard with religious terror, like powerful magical artifacts. Those on the other end of the spectrum will leave for a more boss-friendly language and dev environment like Go. What will be left, the eternal core of Clojure, will be people who are content with using a bad lisp. The goldilocks programmer, stuck in the middle, who simply puts up with the glaring warts and unfinished, sharp edges. Who shrugs while pounding a nail using a garden gnome instead of a hammer, but accepts that it&rsquo;s better than whatever they&rsquo;d be doing in Go or such.</p>
-
-<p>The goldilocks Clojure programmer is one for whom Clojure is their first functional language, first serious use of lisp outside of a hobby since college, and who has suffered through a boss-friendly language for a bit before arriving in Clojure. This person doesn&rsquo;t know what normal functional languages or lisps or like, but does know what the lack of Java is like. Unfortunately, they&rsquo;ve normalized Java enough that they don&rsquo;t notice how much squirts out of their code. This person will stay, outlasting the lisp weenies who arrive in a shower of happy parentheses and leave just as suddenly. This person will stay, outlasting their colleagues who spent more time in cubicle hell than they did, and who retreat to a more corporate language. This person will not have any sufficient motivation to fix either the errors the lisp weenies see, or the errors the Java people see.</p>
-
-<p>Clojure is, almost by design, guaranteed to experience evaporative cooling from both ends of the political spectrum of coding. It&rsquo;s an alt-center language, it&rsquo;s that weird guy who claims to be both an anarchist and a Moldbugian. It&rsquo;s a gloriously failed lisp that will almost certainly expose more people to lisp than any other dialect has. Just like php exposed an entire generation to their first, terrible, programming language.</p>
+<p>Code.org is tough to figure out how to structure it. I initially thought of organizing by language, but I don&rsquo;t like how that lacks telos. It encourages dicking around with no goal, just bouncing from thing to thing. I could organize by project, but that similarly lacks focus if there are multiple projects to bounce around in. I settled on just a datetree and tags. A datetree encourages a daily log of what I intend to do, what I actually did, and where I am going. I can just filter by tags and date until this becomes insufficient and I need to split off a project, in which case I&rsquo;d rather add it to code.org instead of making a new orgfile. Again, I want to try as hard as possible to discourage dicking around bouncing from one thing to another without a goal.</p>
   <footer>
         <script type="text/javascript">
           !function(d,s,id){
@@ -140,15 +132,13 @@
         </script>
         <a href="https://twitter.com/share"
            class="twitter-share-button"
-           data-url="http://pookleblinky.github.io/2017/05/clojure-rant-2.html"
+           data-url="http://pookleblinky.github.io/2017/05/orgmode.html"
            data-dnt="true">
           "Tweet"</a>
         <ul class="pager">
-        <li class="previous">
-          <a href="/2017/05/orgmode.html">&larr; <em>orgmode</em></a>
-        </li>
+
         <li class="next">
-          <a href="/2017/05/clojure-annoyances-1.html"><em>clojure annoyances, 1</em> &rarr;</a>
+          <a href="/2017/05/clojure-rant-2.html"><em>clojure rant, 2</em> &rarr;</a>
         </li>
         </ul>
   </footer>

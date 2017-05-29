@@ -4,7 +4,21 @@
  <link rel="self" href="http://pookleblinky.github.io/feeds/all.atom.xml" />
  <link href="http://pookleblinky.github.io/index.html" />
  <id>urn:http-pookleblinky-github-io:-index-html</id>
- <updated>2017-05-27T08:23:28Z</updated>
+ <updated>2017-05-29T17:13:40Z</updated>
+ <entry>
+  <title type="text">orgmode</title>
+  <link rel="alternate" href="http://pookleblinky.github.io/2017/05/orgmode.html?utm_source=all&amp;utm_medium=Atom" />
+  <id>urn:http-pookleblinky-github-io:-2017-05-orgmode-html</id>
+  <published>2017-05-29T17:13:40Z</published>
+  <updated>2017-05-29T17:13:40Z</updated>
+  <author>
+   <name>Pookleblinky</name></author>
+  <content type="html">
+&lt;p&gt;I&amp;rsquo;m spending some time getting org-mode configured the way I want. I&amp;rsquo;m trying to keep things as simple as possible, given how much yakshave potential there is in org mode. I have only a few files in ~/org:  orgfile.org  blog.org  code.org  refile.org&lt;/p&gt;
+
+&lt;p&gt;Orgfile.org, which is the default general agenda file. It&amp;rsquo;s structured like this:  datetree  links  notes  tasks  orgstuff My blog.org is just a datetree.&lt;/p&gt;
+
+&lt;p&gt;Code.org is tough to figure out how to structure it. I initially thought of organizing by language, but I don&amp;rsquo;t like how that lacks telos. It encourages dicking around with no goal, just bouncing from thing to thing. I could organize by project, but that similarly lacks focus if there are multiple projects to bounce around in. I settled on just a datetree and tags. A datetree encourages a daily log of what I intend to do, what I actually did, and where I am going. I can just filter by tags and date until this becomes insufficient and I need to split off a project, in which case I&amp;rsquo;d rather add it to code.org instead of making a new orgfile. Again, I want to try as hard as possible to discourage dicking around bouncing from one thing to another without a goal.&lt;/p&gt;</content></entry>
  <entry>
   <title type="text">clojure rant, 2</title>
   <link rel="alternate" href="http://pookleblinky.github.io/2017/05/clojure-rant-2.html?utm_source=all&amp;utm_medium=Atom" />
