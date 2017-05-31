@@ -4,9 +4,29 @@
   <title>Mistake Not: Posts tagged 'workflow'</title>
   <description>Mistake Not: Posts tagged 'workflow'</description>
   <link>http://pookleblinky.github.io/tags/workflow.html</link>
-  <lastBuildDate>Mon, 29 May 2017 17:13:40 UT</lastBuildDate>
-  <pubDate>Mon, 29 May 2017 17:13:40 UT</pubDate>
+  <lastBuildDate>Wed, 31 May 2017 09:39:05 UT</lastBuildDate>
+  <pubDate>Wed, 31 May 2017 09:39:05 UT</pubDate>
   <ttl>1800</ttl>
+  <item>
+   <title>org mode and language study</title>
+   <link>http://pookleblinky.github.io/2017/05/org-mode-and-language-study.html?utm_source=workflow&amp;utm_medium=RSS</link>
+   <guid isPermaLink="false">urn:http-pookleblinky-github-io:-2017-05-org-mode-and-language-study-html</guid>
+   <pubDate>Wed, 31 May 2017 09:39:05 UT</pubDate>
+   <author>Pookleblinky</author>
+   <description>
+&lt;p&gt;I made a shell script that plops out a random programming language from the list of ones I&amp;rsquo;m playing with. I called it language-of-the-day.&lt;/p&gt;
+
+&lt;p&gt;In the morning, I add an entry to orgfile.org that drops the output of that script into today&amp;rsquo;s node and evals it. I then know what language to focus on that day.&lt;/p&gt;
+
+&lt;p&gt;I then C-c c and start adding todos for that language. Do foo, look up bar, try out baz, study source of quux, etc. C-c a t lets me see all these todos, and I can start working on them.&lt;/p&gt;
+
+&lt;p&gt;I can divide a todo into separate todo steps, set a time estimate for each, and see how long I expect the task to take. It&amp;rsquo;s possible to then compare the estimate with the reality, and see how laughable the former is. It&amp;rsquo;s possible to then look into the subtasks and see which ones were the most inaccurate. I can set a todo note to study whatever was causing that step to take so long.&lt;/p&gt;
+
+&lt;p&gt;Today&amp;rsquo;s language is Racket. I only have 3 todos: some exercism problems, studying the Racket style guide, and writing yasnippet/ultisnip templates specifically for Racket. The latter is gonna take a while, as I don&amp;rsquo;t feel at all like writing a snippet I will never use. I&amp;rsquo;d rather write code, note (C-c c n) when a snippet would come in handy, and keep working on it. Later, I can look at those notes and see which snippets would actually come in handy. I can also, without interrupting what I&amp;rsquo;m doing, make a note about inefficient editing habits. &amp;ldquo;find a better way to do blah&amp;rdquo; etc.&lt;/p&gt;
+
+&lt;p&gt;This workflow helps keep me from bouncing around too much, playing with trying the same thing in another language or editor or falling down the rabbit hole of yakshaving. I&amp;rsquo;m focusing on foolang, doing bar and quux, and can tell you exactly how long it took me to figure out how to frobulate the wibble. Afterward I can look the notes, spin them off into separate projects, remind myself that I really wanted to try out x in another language, etc.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s not a polished, highly automated set up for 2 reasons: I don&amp;rsquo;t like magic, and that way lays endless yakshaving. This way has enough rough edges that resisting the urge to yakshave them away is a good form of exposure therapy.&lt;/p&gt;</description></item>
   <item>
    <title>orgmode</title>
    <link>http://pookleblinky.github.io/2017/05/orgmode.html?utm_source=workflow&amp;utm_medium=RSS</link>
