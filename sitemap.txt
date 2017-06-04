@@ -8,4 +8,5 @@ http://pookleblinky.github.io/2017/05/clojure-rant-2.html
 http://pookleblinky.github.io/2017/05/org-mode-and-language-study.html
 http://pookleblinky.github.io/2017/05/first-post.html
 http://pookleblinky.github.io/2017/05/languages.html
+http://pookleblinky.github.io/2017/06/org-mode-and-yakshaving.html
 http://pookleblinky.github.io/About.html

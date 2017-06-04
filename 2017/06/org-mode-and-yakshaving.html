@@ -3,14 +3,14 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Posts tagged 'emacs'</title>
-    <meta name="description" content="Posts tagged 'emacs'">
+    <title>org mode and yakshaving</title>
+    <meta name="description" content="I tweaked my language-of-the day script. There is now a major language of the day (racket, elixir, haskell) and a minor language of the day (cl, chicken, clojure, erlang, ocaml). Each day gets a major language and a minor language; the major gets more emp...">
     <meta name="author"      content="Pookleblinky">
-    <meta name="keywords"    content="emacs">
+    <meta name="keywords"    content="orgmode, workflow, emacs">
     <meta name="viewport"    content="width=device-width, initial-scale=1.0">
     <link rel="icon"      href="/favicon.ico">
-    <link rel="canonical" href="http://pookleblinky.github.io/tags/emacs.html">
-
+    <link rel="canonical" href="http://pookleblinky.github.io/2017/06/org-mode-and-yakshaving.html">
+    <link rel="next" href="/2017/05/org-mode-and-language-study.html">
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
@@ -19,9 +19,9 @@
     <link rel="stylesheet" type="text/css" href="/css/custom.css">
     <!-- Feeds -->
     <link rel="alternate" type="application/atom+xml"
-          href="/feeds/emacs.atom.xml" title="Atom Feed">
+          href="/feeds/all.atom.xml" title="Atom Feed">
     <link rel="alternate" type="application/rss+xml"
-          href="/feeds/emacs.rss.xml" title="RSS Feed">
+          href="/feeds/all.rss.xml" title="RSS Feed">
     <!-- JS -->
     <script type="text/javascript">
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -93,8 +93,8 @@
             <li>
               <a href="/About.html">About</a>
             </li> 
-            <li><a href="/feeds/emacs.atom.xml">Atom</a></li>
-            <li><a href="/feeds/emacs.rss.xml">RSS</a></li>
+            <li><a href="/feeds/all.atom.xml">Atom</a></li>
+            <li><a href="/feeds/all.rss.xml">RSS</a></li>
           </ul>
         </div>
       </div>
@@ -107,11 +107,11 @@
 
 
 
-          <h1>Posts tagged <em>emacs</em></h1>
+
 
           <article>
   <header>
-    <h2><a href='/2017/06/org-mode-and-yakshaving.html'>org mode and yakshaving</a></h2>
+    <h1>org mode and yakshaving</h1>
     <p class='date-and-tags'>
 <time datetime="2017-06-03" pubdate="true">2017-06-03</time> :: <span class="tags"><a href="/tags/orgmode.html">orgmode</a>, <a href="/tags/workflow.html">workflow</a>, <a href="/tags/emacs.html">emacs</a></span></p>
     <p class='authors'>By: <span class="authors">Pookleblinky</span></p>
@@ -147,30 +147,30 @@
 <p>While writing this I popped out a yakshave task to see how to convert org source blocks to scribble code blocks. Github pages renders org and md, but I don&rsquo;t know if I can tell it &ldquo;this is a markdown file with org syntax you should also follow.&rdquo; Hm, I wonder if frog can be made to deal with org files. In keeping with my goal of minimizing yakshaving, I decided to just indent the above code snippets into generic markdown blocks and play with it later.</p>
 
 <p>I then made a note to figure out how to display clock minutes as pomodoro units just by dividing them by 25. I don&rsquo;t really use pomodoro (I prefer to measure effort in cigarettes. A full gentoo stage one install is 1 pack. Getting Frog up and running: 3 cigarettes.) But, seeing things as 25 minute chunks is just more useful than seeing the raw amount of time spent. Doing the same thing later and seeing the effort drop is more impressive when you can see whole pomodoro units drop off rather than &ldquo;oh it took 20 minutes less on each of these parts.&rdquo;</p>
+  <footer>
+        <script type="text/javascript">
+          !function(d,s,id){
+              var js,fjs=d.getElementsByTagName(s)[0];
+              if(!d.getElementById(id)){
+                  js=d.createElement(s);
+                  js.id=id;
+                  js.src="//platform.twitter.com/widgets.js";
+                  fjs.parentNode.insertBefore(js,fjs);
+              }
+          }(document,"script","twitter-wjs");
+        </script>
+        <a href="https://twitter.com/share"
+           class="twitter-share-button"
+           data-url="http://pookleblinky.github.io/2017/06/org-mode-and-yakshaving.html"
+           data-dnt="true">
+          "Tweet"</a>
+        <ul class="pager">
 
-</article>
-<article>
-  <header>
-    <h2><a href='/2017/05/org-mode-and-language-study.html'>org mode and language study</a></h2>
-    <p class='date-and-tags'>
-<time datetime="2017-05-31" pubdate="true">2017-05-31</time> :: <span class="tags"><a href="/tags/orgmode.html">orgmode</a>, <a href="/tags/emacs.html">emacs</a>, <a href="/tags/workflow.html">workflow</a></span></p>
-    <p class='authors'>By: <span class="authors">Pookleblinky</span></p>
-  </header>
-
-<p>I made a shell script that plops out a random programming language from the list of ones I&rsquo;m playing with. I called it language-of-the-day.</p>
-
-<p>In the morning, I add an entry to orgfile.org that drops the output of that script into today&rsquo;s node and evals it. I then know what language to focus on that day.</p>
-
-<p>I then C-c c and start adding todos for that language. Do foo, look up bar, try out baz, study source of quux, etc. C-c a t lets me see all these todos, and I can start working on them.</p>
-
-<p>I can divide a todo into separate todo steps, set a time estimate for each, and see how long I expect the task to take. It&rsquo;s possible to then compare the estimate with the reality, and see how laughable the former is. It&rsquo;s possible to then look into the subtasks and see which ones were the most inaccurate. I can set a todo note to study whatever was causing that step to take so long.</p>
-
-<p>Today&rsquo;s language is Racket. I only have 3 todos: some exercism problems, studying the Racket style guide, and writing yasnippet/ultisnip templates specifically for Racket. The latter is gonna take a while, as I don&rsquo;t feel at all like writing a snippet I will never use. I&rsquo;d rather write code, note (C-c c n) when a snippet would come in handy, and keep working on it. Later, I can look at those notes and see which snippets would actually come in handy. I can also, without interrupting what I&rsquo;m doing, make a note about inefficient editing habits. &ldquo;find a better way to do blah&rdquo; etc.</p>
-
-<p>This workflow helps keep me from bouncing around too much, playing with trying the same thing in another language or editor or falling down the rabbit hole of yakshaving. I&rsquo;m focusing on foolang, doing bar and quux, and can tell you exactly how long it took me to figure out how to frobulate the wibble. Afterward I can look the notes, spin them off into separate projects, remind myself that I really wanted to try out x in another language, etc.</p>
-
-<p>It&rsquo;s not a polished, highly automated set up for 2 reasons: I don&rsquo;t like magic, and that way lays endless yakshaving. This way has enough rough edges that resisting the urge to yakshave them away is a good form of exposure therapy.</p>
-
+        <li class="next">
+          <a href="/2017/05/org-mode-and-language-study.html"><em>org mode and language study</em> &rarr;</a>
+        </li>
+        </ul>
+  </footer>
 </article>
         </div>
       </div>
