@@ -1,35 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?> 
 <rss version="2.0">
  <channel>
-  <title>Mistake Not: Posts tagged 'dev environment'</title>
-  <description>Mistake Not: Posts tagged 'dev environment'</description>
+  <title>Mistake Not: Posts tagged 'dev-environment'</title>
+  <description>Mistake Not: Posts tagged 'dev-environment'</description>
   <link>http://pookleblinky.github.io/tags/dev-environment.html</link>
-  <lastBuildDate>Fri, 26 May 2017 07:04:55 UT</lastBuildDate>
-  <pubDate>Fri, 26 May 2017 07:04:55 UT</pubDate>
+  <lastBuildDate>Sun, 11 Jun 2017 10:05:30 UT</lastBuildDate>
+  <pubDate>Sun, 11 Jun 2017 10:05:30 UT</pubDate>
   <ttl>1800</ttl>
   <item>
-   <title>languages</title>
-   <link>http://pookleblinky.github.io/2017/05/languages.html?utm_source=dev-environment&amp;utm_medium=RSS</link>
-   <guid isPermaLink="false">urn:http-pookleblinky-github-io:-2017-05-languages-html</guid>
-   <pubDate>Fri, 26 May 2017 07:04:55 UT</pubDate>
+   <title>Installing Stack</title>
+   <link>http://pookleblinky.github.io/2017/06/installing-stack.html?utm_source=dev-environment&amp;utm_medium=RSS</link>
+   <guid isPermaLink="false">urn:http-pookleblinky-github-io:-2017-06-installing-stack-html</guid>
+   <pubDate>Sun, 11 Jun 2017 10:05:30 UT</pubDate>
    <author>Pookleblinky</author>
    <description>
-&lt;p&gt;I tend to get flustered when learning languages. I bounce from one to another, trying the same thing in each. &amp;ldquo;oh cool how would I do this in foo? Ah, gotta yakshave my emacs for bar.&amp;rdquo; Since every programming language sucks, I end up endlessly plunging down rabbit holes trying to yakshave things to work properly and smoothly. My focus gets distributed among n languages, m setups, and p annoyances. In this vast space, I end up wandering stochastically and occasionally bumping into useful things. This is no way to conquer a territory and hear the dialup modem screeching lamentations of its robots as you chase them before you.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m running Crouton, which makes some things difficult and others outright cartoonish. Here is what was involved in getting Stack to work.&lt;/p&gt;
 
-&lt;p&gt;Little ends up getting done, and I end up working at a cartoonishly slow pace as I bounce around playing with everything. Despite learning, I end up with little to show for it, and the lack of structure means I end up following an interesting avenue and completely neglecting what is usually considered a vital part of the language.&lt;/p&gt;
+&lt;p&gt;Round 1: I installed stack from gethaskellstack. My ppa ghc was 7.4, which is cartoonishly outdated and which stack will yell at you about if you try to use it as global ghc. So: stack setup and it&amp;rsquo;ll install ghc, right?&lt;/p&gt;
 
-&lt;p&gt;Right now, I&amp;rsquo;m focusing on Racket, Elixir, Clojure, and Common Lisp. oCaml, LFE, and Haskell as background noise, not the main focus. Clojure is a bit lower priority than Elixir; it&amp;rsquo;s just not a good lisp and the dev is not fun on a low-end device. Elixir is a better lisp than clojure and it&amp;rsquo;s not even trying. It didn&amp;rsquo;t even bother to bring its bag full of parentheses to the party and it still kicks clojure&amp;rsquo;s ass. Reminder to rant about this later.&lt;/p&gt;
+&lt;p&gt;No. First, I found that stack kept repeatedly freezing while downloading ghc 8.2, then starting over again. Sometimes the resource would vanish. When it did manage to download entirely, it&amp;rsquo;d attempt to unpack all 1.4gb into about half that amount of tmpfs. I knew that the tmpfs thing was a known issue, so I cleverly set $TMPDIR=~/tmp. Then I discovered that stack was not obeying this environment variable, and persisted in attempting to jam 10 gallons of shit into a 5 gallon bucket.&lt;/p&gt;
 
-&lt;p&gt;That&amp;rsquo;s a lot of opportunity to get distracted on several levels, from other languages to yakshaving dev environments and workflows for them.&lt;/p&gt;
+&lt;p&gt;My tmpfs was half of total ram, and I my &lt;em&gt;free space&lt;/em&gt; was about 1.5gb anyway. I manually plopped the ghc&amp;ndash;8.2 tarball into where stack expected it, bypassing stack&amp;rsquo;s dodgy download process, and then tried to see if I could bypass stack in building it, taking advantage of an actual tmp directory. No dice: just not enough actual space for that.&lt;/p&gt;
 
-&lt;p&gt;For instance, my normal workflow involves vim-slime and tmux. Vim-slime sends text to a specified tmux pane, it doesn&amp;rsquo;t know or care what repl is on the other end. It doesn&amp;rsquo;t know or care about nrepl or swank or any of that. Just where to dump the text. I prefer this over magic. Well, in LFE slurping a file into the repl dumps all previously slurped macros and defs. The repl is more stateful than most, so the workflow is a little awkward. I was pondering how to tweak vim-slime to have an LFE mode that would on C-c C-c first save, then send over the text (c "@%"), or something. I could yakshave on this happily, but it&amp;rsquo;s a distraction. I&amp;rsquo;m trying to minimize as much as possible the temptation to yakshave, so I forced myself mid-fork of vim-slime into lfe-slurp to stop and just accept a bit of extra typing.&lt;/p&gt;
+&lt;p&gt;So I moved my chroot out of internal storage and into an sdcard with 50gb of free space. This move was one command, worked instantly, and I haven&amp;rsquo;t seen any performance hit whatsoever. My filesystem now had plenty of space for updating from trusty to xenial (and ghc 7.4 to 7.10, which stack won&amp;rsquo;t yell about).&lt;/p&gt;
 
-&lt;p&gt;My attempted solution to the focus problem is simple. For focus, I&amp;rsquo;m using exercism. Each language is on a different track, each has defined tasks to accomplish and progress is tracked. Most tracks have similar tasks, which nicely satisfies my &amp;ldquo;oh man I wonder how I&amp;rsquo;d do this in foo&amp;rdquo; impulse, but in a structured and focused way. Yakshaving is kept to a minimum: while working in racket, I can pop over to another pane, type &amp;ldquo;langjournal,&amp;rdquo; and note a todo about yakshaving vim to work better with it. Later, I can yakshave, but I can keep focused on what I was doing instead of falling down the rabbit hole.&lt;/p&gt;
+&lt;p&gt;So I upgraded to xenial. Everything went absolutely smoothly. The only thing I had to tweak was that tmux&amp;rsquo;s updated version collapsed several mouse options into one, so I just had to replace them with that one setting.&lt;/p&gt;
 
-&lt;p&gt;I also have an enormous folder of interesting code laying on my 2tb external harddrive, from language cores and projects to ebooks. I can browse, offline, all the code I could want. Obviously, without structure I could endlessly study this without ever doing anything useful. With even a modicum of enforced structure, this actually becomes useful, instead of a labyrinth through which I&amp;rsquo;m chasing my own tail.&lt;/p&gt;
+&lt;p&gt;I had plenty of space, a modern enough ghc, and the will to keep fighting stack.&lt;/p&gt;
 
-&lt;p&gt;While doing the erlang track, I saw that rebar.config hardcoded rebar3. I did the task, gsubbed rebar3 to rebar (v2 is what I had), and ran the tests. They passed, I made a note. Went on #erlang, asked about rebar3, and decided to upgrade. I bootstrapped it in less than a minute, reverted rebar.config, and it worked as intended. Minimal yakshaving.&lt;/p&gt;
+&lt;p&gt;Round 2. Xenial has haskell-stack in its repo. I installed it, and began working on the tmpfs problem. I discovered that it wasn&amp;rsquo;t listening to fish; I had to switch to zsh in order to set $TMPDIR such that it&amp;rsquo;d actually listen. This turned out to be a known issue since 2015. Stack will yell at you if you attempt to use a version below 1.4, so I had to upgrade it before I could install ghc 8.2.&lt;/p&gt;
 
-&lt;p&gt;I figure as long as I keep things structured, push yakshaving out of the way into its own activity (&amp;ldquo;today I&amp;rsquo;m gonna get vim to work better with lfe&amp;rdquo;), and avoid temptation, I&amp;rsquo;ll have a much nicer time than my usual habits provide. Then, I&amp;rsquo;ll actually get stuff done, comprehensibly, instead of amassing largely useless knowledge.&lt;/p&gt;
+&lt;p&gt;I opened zsh in a pane, exported TMPDIR=~/tmp, and ran stack upgrade. Switched to another pane, cd&amp;rsquo;d to tmp, and stuff was going on! Things were happening! Compilation failed at 27/34 modules, something about ZLib compression having set invalid code lengths. Hey, at least it wasn&amp;rsquo;t my fault. I ran it again, this time it said only 29 modules were needed. It compiled all of them, exited successfully, and &lt;em&gt;the version was not changed.&lt;/em&gt; The successful exit was a lie, it had not actually upgraded to 1.4. In a rage I uninstalled it and wiped ~/.stack.&lt;/p&gt;
 
-&lt;p&gt;This blog is going to be part of my workflow, forcing me to maintain a coherency which is usually lost reinventing a local PLEAC.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;I knew now that manually plopping things where stack expects them works, and that stack needs a non-fish shell interaction.&lt;/p&gt;
+
+&lt;p&gt;Round 3. I installed stack from gethaskellstack, so I would have 1.4 and wouldn&amp;rsquo;t have to be distracted by upgrading it. I opened a zsh pane, set TMPDIR=~/tmp, and then ran stack setup &amp;mdash;git. It yelled that there was no package index, tried to download it, and then gave up saying the resource had vanished. I tried stack update &amp;mdash;git. This caused stack to scream that there was no package index, and then try to download it, and then exit after the aws resource &amp;ldquo;vanished.&amp;rdquo; I ran it again with -v and discovered that the mirror it&amp;rsquo;s pointing at, simply doesn&amp;rsquo;t respond. It turns out this is a known issue, as well.&lt;/p&gt;
+
+&lt;p&gt;So: I needed to get that package index without relying on the mirror. I google-fu&amp;rsquo;d and found the json it was trying to get, and downloaded it into my frog static site. I redirected the url stack update was trying to get to into a localhost frog server, and voila. It installed the package index, and exited successfully. I then ran stack setup &amp;mdash;git -v, and it miraculously began downloading ghc&amp;ndash;8.2 &lt;em&gt;without any interruptions&lt;/em&gt;. It downloaded the entire thing, then froze on installing ghc for 48 minutes. Then, exited successfully.&lt;/p&gt;
+
+&lt;p&gt;Right now it appears that stack is up and running, with a local ghc that is sufficiently up to date that it should stop yelling at me.&lt;/p&gt;</description></item></channel></rss>

@@ -3,15 +3,15 @@
   <head>
 
     <meta charset="utf-8">
-    <title>org mode and yakshaving</title>
-    <meta name="description" content="I tweaked my language-of-the day script. There is now a major language of the day (racket, elixir, haskell) and a minor language of the day (cl, chicken, clojure, erlang, ocaml). Each day gets a major language and a minor language; the major gets more emp...">
+    <title>Installing Stack</title>
+    <meta name="description" content="I'm running Crouton, which makes some things difficult and others outright cartoonish. Here is what was involved in getting Stack to work.  Round 1: I installed stack from gethaskellstack. My ppa ghc was 7.4, which is cartoonishly outdated and which stack...">
     <meta name="author"      content="Pookleblinky">
-    <meta name="keywords"    content="orgmode, workflow, emacs">
+    <meta name="keywords"    content="yakshaving, dev-environment, haskell">
     <meta name="viewport"    content="width=device-width, initial-scale=1.0">
     <link rel="icon"      href="/favicon.ico">
-    <link rel="canonical" href="http://pookleblinky.github.io/2017/06/org-mode-and-yakshaving.html">
-    <link rel="next" href="/2017/05/org-mode-and-language-study.html">
-    <link rel="prev" href="/2017/06/installing-stack.html">
+    <link rel="canonical" href="http://pookleblinky.github.io/2017/06/installing-stack.html">
+    <link rel="next" href="/2017/06/org-mode-and-yakshaving.html">
+
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/css/pygments.css">
@@ -115,42 +115,37 @@
 
           <article>
   <header>
-    <h1>org mode and yakshaving</h1>
+    <h1>Installing Stack</h1>
     <p class='date-and-tags'>
-<time datetime="2017-06-03" pubdate="true">2017-06-03</time> :: <span class="tags"><a href="/tags/orgmode.html">orgmode</a>, <a href="/tags/workflow.html">workflow</a>, <a href="/tags/emacs.html">emacs</a></span></p>
+<time datetime="2017-06-11" pubdate="true">2017-06-11</time> :: <span class="tags"><a href="/tags/yakshaving.html">yakshaving</a>, <a href="/tags/dev-environment.html">dev-environment</a>, <a href="/tags/haskell.html">haskell</a></span></p>
     <p class='authors'>By: <span class="authors">Pookleblinky</span></p>
   </header>
 
-<p>I tweaked my language-of-the day script. There is now a major language of the day (racket, elixir, haskell) and a minor language of the day (cl, chicken, clojure, erlang, ocaml). Each day gets a major language and a minor language; the major gets more emphasis.</p>
+<p>I&rsquo;m running Crouton, which makes some things difficult and others outright cartoonish. Here is what was involved in getting Stack to work.</p>
 
-<p>How much more can vary depending on mood, but this way not only does something get done in each language each day, but the three I am most interested in get more emphasis each day.</p>
+<p>Round 1: I installed stack from gethaskellstack. My ppa ghc was 7.4, which is cartoonishly outdated and which stack will yell at you about if you try to use it as global ghc. So: stack setup and it&rsquo;ll install ghc, right?</p>
 
-<p>It seems like a nice setup. I&rsquo;ll have to play around with it more to see where the annoyances are. The other day, for instance, was a haskell day but I got damned little accomplished due to trying to get stack to work properly.</p>
+<p>No. First, I found that stack kept repeatedly freezing while downloading ghc 8.2, then starting over again. Sometimes the resource would vanish. When it did manage to download entirely, it&rsquo;d attempt to unpack all 1.4gb into about half that amount of tmpfs. I knew that the tmpfs thing was a known issue, so I cleverly set $TMPDIR=~/tmp. Then I discovered that stack was not obeying this environment variable, and persisted in attempting to jam 10 gallons of shit into a 5 gallon bucket.</p>
 
-<p>The yakshave in question: no matter how I changed $TMPDIR and $STACK_ROOT and such, stack kept trying to download its local ghc into ~/.stack on my internal drive then cartoonishly fail at attempting to stuff it into my limited (I&rsquo;m on crouton) tmpfs instead of using a tmp folder on an external drive with 2TB of space. Symlinks, according to github issues tracking, apparently work fine <em>after</em> stack setup has done its thing, but that wasn&rsquo;t the problem I was having. I eventually concluded that it&rsquo;d require serious yakshaving with executability of external drives and such, and gave up for now. In the end, I got little actual haskell done due to spending so much time trying to get its environment working.</p>
+<p>My tmpfs was half of total ram, and I my <em>free space</em> was about 1.5gb anyway. I manually plopped the ghc&ndash;8.2 tarball into where stack expected it, bypassing stack&rsquo;s dodgy download process, and then tried to see if I could bypass stack in building it, taking advantage of an actual tmp directory. No dice: just not enough actual space for that.</p>
 
-<p>Here&rsquo;s my global org todo keywords:</p>
+<p>So I moved my chroot out of internal storage and into an sdcard with 50gb of free space. This move was one command, worked instantly, and I haven&rsquo;t seen any performance hit whatsoever. My filesystem now had plenty of space for updating from trusty to xenial (and ghc 7.4 to 7.10, which stack won&rsquo;t yell about).</p>
 
-<pre><code>(setq org-todo-keywords
-	'((sequence "TODO(t)" "STARTED(s)"
-		"DEFERRED(p)" "NEXT(n)"
-		"YAKSHAVE(y)"
-		"|" "DONE(d)" "CANCELLED(c)")))</code></pre>
+<p>So I upgraded to xenial. Everything went absolutely smoothly. The only thing I had to tweak was that tmux&rsquo;s updated version collapsed several mouse options into one, so I just had to replace them with that one setting.</p>
 
-<p>I have a YAKSHAVE org status that I can apply to tasks. I can C-c c a yakshave note (&ldquo;figure out how to get stack to actually use $TMPDIR&rdquo; etc) and keep doing what I was doing. I can clock in and out of it as I work on something, and see how much time was spent actually doing a task versus getting things to work. At some point I&rsquo;ll log this ratio of task to yakshave by language, over time, etc.</p>
+<p>I had plenty of space, a modern enough ghc, and the will to keep fighting stack.</p>
 
-<p>Deferred/Next refer to tasks for a specific language that I&rsquo;ll pick up again the next time its language-of-the-day rolls around.</p>
+<p>Round 2. Xenial has haskell-stack in its repo. I installed it, and began working on the tmpfs problem. I discovered that it wasn&rsquo;t listening to fish; I had to switch to zsh in order to set $TMPDIR such that it&rsquo;d actually listen. This turned out to be a known issue since 2015. Stack will yell at you if you attempt to use a version below 1.4, so I had to upgrade it before I could install ghc 8.2.</p>
 
-<p>What I&rsquo;m doing is banging out a bunch of todos after language-of-the-day. C-c a t 1 r and I can see all of them. I can start one, C-c C-t it to started, and then make subtasks for it.</p>
+<p>I opened zsh in a pane, exported TMPDIR=~/tmp, and ran stack upgrade. Switched to another pane, cd&rsquo;d to tmp, and stuff was going on! Things were happening! Compilation failed at 27/34 modules, something about ZLib compression having set invalid code lengths. Hey, at least it wasn&rsquo;t my fault. I ran it again, this time it said only 29 modules were needed. It compiled all of them, exited successfully, and <em>the version was not changed.</em> The successful exit was a lie, it had not actually upgraded to 1.4. In a rage I uninstalled it and wiped ~/.stack.</p>
 
-<pre><code>;; Enforce dependencies
-(setq org-enforce-todo-dependencies t)</code></pre>
+<p>I knew now that manually plopping things where stack expects them works, and that stack needs a non-fish shell interaction.</p>
 
-<p>This makes a todo depend on sub-tasks. You can&rsquo;t switch a task to DONE until every TODO in it is done. Yakshaves aren&rsquo;t subtasks, and thus survive after the task is done as a reminder. Afterwards, I can switch the yakshave to a TODO, clock in, and start messing with it.</p>
+<p>Round 3. I installed stack from gethaskellstack, so I would have 1.4 and wouldn&rsquo;t have to be distracted by upgrading it. I opened a zsh pane, set TMPDIR=~/tmp, and then ran stack setup &mdash;git. It yelled that there was no package index, tried to download it, and then gave up saying the resource had vanished. I tried stack update &mdash;git. This caused stack to scream that there was no package index, and then try to download it, and then exit after the aws resource &ldquo;vanished.&rdquo; I ran it again with -v and discovered that the mirror it&rsquo;s pointing at, simply doesn&rsquo;t respond. It turns out this is a known issue, as well.</p>
 
-<p>While writing this I popped out a yakshave task to see how to convert org source blocks to scribble code blocks. Github pages renders org and md, but I don&rsquo;t know if I can tell it &ldquo;this is a markdown file with org syntax you should also follow.&rdquo; Hm, I wonder if frog can be made to deal with org files. In keeping with my goal of minimizing yakshaving, I decided to just indent the above code snippets into generic markdown blocks and play with it later.</p>
+<p>So: I needed to get that package index without relying on the mirror. I google-fu&rsquo;d and found the json it was trying to get, and downloaded it into my frog static site. I redirected the url stack update was trying to get to into a localhost frog server, and voila. It installed the package index, and exited successfully. I then ran stack setup &mdash;git -v, and it miraculously began downloading ghc&ndash;8.2 <em>without any interruptions</em>. It downloaded the entire thing, then froze on installing ghc for 48 minutes. Then, exited successfully.</p>
 
-<p>I then made a note to figure out how to display clock minutes as pomodoro units just by dividing them by 25. I don&rsquo;t really use pomodoro (I prefer to measure effort in cigarettes. A full gentoo stage one install is 1 pack. Getting Frog up and running: 3 cigarettes.) But, seeing things as 25 minute chunks is just more useful than seeing the raw amount of time spent. Doing the same thing later and seeing the effort drop is more impressive when you can see whole pomodoro units drop off rather than &ldquo;oh it took 20 minutes less on each of these parts.&rdquo;</p>
+<p>Right now it appears that stack is up and running, with a local ghc that is sufficiently up to date that it should stop yelling at me.</p>
   <footer>
         <script type="text/javascript">
           !function(d,s,id){
@@ -165,15 +160,13 @@
         </script>
         <a href="https://twitter.com/share"
            class="twitter-share-button"
-           data-url="http://pookleblinky.github.io/2017/06/org-mode-and-yakshaving.html"
+           data-url="http://pookleblinky.github.io/2017/06/installing-stack.html"
            data-dnt="true">
           "Tweet"</a>
         <ul class="pager">
-        <li class="previous">
-          <a href="/2017/06/installing-stack.html">&larr; <em>Installing Stack</em></a>
-        </li>
+
         <li class="next">
-          <a href="/2017/05/org-mode-and-language-study.html"><em>org mode and language study</em> &rarr;</a>
+          <a href="/2017/06/org-mode-and-yakshaving.html"><em>org mode and yakshaving</em> &rarr;</a>
         </li>
         </ul>
   </footer>
