@@ -6,7 +6,7 @@
     <title>Mistake Not</title>
     <meta name="description" content="Mistake Not">
     <meta name="author"      content="Pookleblinky">
-    <meta name="keywords"    content="resources, coding, scheme, dev environment, meta, all, languages, workflow, rant, git, orgmode, haskell, dev-environment, yakshaving, learning, Emacs, clojure, emacs">
+    <meta name="keywords"    content="yakshaving, resources, coding, scheme, fitness, org-mode, meta, all, git, rant, orgmode, workflow, clojure, languages, dev-environment, learning, emacs, Emacs, haskell, dev environment">
     <meta name="viewport"    content="width=device-width, initial-scale=1.0">
     <link rel="icon"      href="/favicon.ico">
     <link rel="canonical" href="http://pookleblinky.github.io/index.html">
@@ -67,9 +67,11 @@
 
 <li><a href="/tags/dev-environment.html">dev-environment</a></li>
 
+<li><a href="/tags/Emacs.html">Emacs</a></li>
+
 <li><a href="/tags/emacs.html">emacs</a></li>
 
-<li><a href="/tags/Emacs.html">Emacs</a></li>
+<li><a href="/tags/fitness.html">fitness</a></li>
 
 <li><a href="/tags/git.html">git</a></li>
 
@@ -80,6 +82,8 @@
 <li><a href="/tags/learning.html">learning</a></li>
 
 <li><a href="/tags/meta.html">meta</a></li>
+
+<li><a href="/tags/org-mode.html">org-mode</a></li>
 
 <li><a href="/tags/orgmode.html">orgmode</a></li>
 
@@ -118,6 +122,64 @@
 
 
           <article>
+  <header>
+    <h2><a href='/2017/06/workout-org.html'>workout.org</a></h2>
+    <p class='date-and-tags'>
+<time datetime="2017-06-16" pubdate="true">2017-06-16</time> :: <span class="tags"><a href="/tags/org-mode.html">org-mode</a>, <a href="/tags/fitness.html">fitness</a></span></p>
+    <p class='authors'>By: <span class="authors">Pookleblinky</span></p>
+  </header>
+
+<p>I believe that org-mode will drive you mad if you try to use more than the bare minimum of features necessary for what you need to do.</p>
+
+<p>Here&rsquo;s how I&rsquo;m using it to track workouts.</p>
+
+<p>I have a workout.org file, which is in <code>org-agenda-list</code></p>
+
+<p>Workout.org has a local status header:</p>
+
+<pre><code>#+TODO TODO STARTED | DONE</code></pre>
+
+<p>The STARTED status is just handy to have, even if I don&rsquo;t use it much.</p>
+
+<p>workout.org contains the following structure:</p>
+
+<pre><code>Datetree
+Schedule
+Regimen
+Stats</code></pre>
+
+<p>I have the template</p>
+
+<pre><code>("w" "Log Workout" entry (file+datetree+prompt
+     "~/org/workout.org") "* %? %U" :empty-lines 1)</code></pre>
+
+<p>in my org.el which lets me create a new entry in the datetree. This entry is only to log details of the workout: weights, level of perceived effort, etc. The workout tasks are outside the datetree, in the schedule node. The schedule node contains subheaders of repeating scheduled todos:</p>
+
+<pre><code>** TODO Daily: 300 KB swings
+DEADLINE: &lt;2017-06-15 Thu +1d&gt;
+** TODO Monday: Squat/row
+DEADLINE: &lt;2017-06-19 Mon +1w&gt;</code></pre>
+
+<p>etc. I can clock in, mark done to clock out, and then log the details in the datetree. Keeping the todo separate from the details seems like a good idea, as I don&rsquo;t have to go hunting around: every workout todo is in a single spot. Each workout task has a link to a description in the regimen node: giant set blah, use these accessory movements blah, etc.</p>
+
+<p>Note that these tasks are deadlines, not scheduled. org-mode considers a scheduled task to be when the task is to be started. A deadline task will appear as DEADLINE on the designated day, and org-agenda will show the number of days til a deadline.</p>
+
+<p>The regimen node just contains such as giant set templates, notes on progressive increments, etc. Eventually I may use org-babel to add a such as a 531 calculator and template generator.</p>
+
+<p>Stats contains my bodyweight, BF%, not in a datetree but just time stamped.</p>
+
+<p>This is the simplest setup that does what I want. I could get fancier: adding tags, tweaking a report function that&rsquo;ll show a plot of weights used for a specific lift over time, setting org-habit properties, writing a function to slurp the data right out of my phone&rsquo;s FitNotes .csv into the appropriate places, etc.</p>
+
+<p>None of that&rsquo;s really necessary. FitNotes tracks and graphs specific movements and muscle groups and weights much more nicely than I would do myself. Org-habit, while useful for some things, doesn&rsquo;t really make sense in this context. And directly integrating FitNotes data seems redundant. What workout.org does allow that fitnotes doesn&rsquo;t, is the ability to track and schedule things in plaintext, portably.</p>
+
+<p>The one justifiable increase in complexity is the abovementioned desire to incorporate a workout calculator and generator directly into the file via org-babel. For instance, being able to generate a datetree pre-filled with 531 workouts for a specified number of mesocycles. However, I&rsquo;m not doing 531 although I am inspired by it. If I do switch over, I&rsquo;ll probably get around to it.</p>
+
+<p>That&rsquo;s workout.org. It uses barely any of org-mode&rsquo;s features, does what I need it to do, and can be endlessly refined into one of those org setups where the user seems to be attempting to use every feature of org-mode to weave an elaborate robot web around their lives.</p>
+
+<p>The prime rule in emacs is to start from scratch. The absolute worst thing you can do is plop someone else&rsquo;s stuff into your setup and expect it to work for you. In org-mode especially, this is vital. Every one of those absurdly-polished gems of org mode configurations you see, where the blogger seems to have automated themselves away, is the result of years of tweaks and personal itch-scratches built up over time in the way that only lisp allows. Few will want to show you how they did things the lazy way, only the final result guaranteed to utterly annoy anyone who plops it into their config and tries to use it. In org mode especially, that lazy way that doesn&rsquo;t show off any of the really nifty features is probably good enough for 80% of the time, and can easily be used as a guide by a newbie. If they&rsquo;re foolish enough to steal it for themselves, at least it&rsquo;ll be simple enough they will be able to understand it and find out how to tweak it. Either way, it&rsquo;s much more useful than showing the fully chromed-out inscrutable code that the config inevitably becomes as emacs is tweaked into conforming to them.</p>
+
+</article>
+<article>
   <header>
     <h2><a href='/2017/06/installing-stack.html'>Installing Stack</a></h2>
     <p class='date-and-tags'>
@@ -363,19 +425,6 @@
 
 <p>Look at <a href="http://ohshitgit.com/">Oh Shit Git</a>. It lists very common mistakes, in plain English, and explains how to fix them. I guarantee that the vast majority of git users have never <em>purposely</em> made those mistakes in order to see how to fix them. For many, the first time they have to fix a mistake, that mistake is new to them and they end up on ohshitgit or stackoverflow typing commands that may as well be mystic incantations.</p>
 
-</article>
-<article>
-  <header>
-    <h2><a href='/2017/05/frog.html'>Frog</a></h2>
-    <p class='date-and-tags'>
-<time datetime="2017-05-21" pubdate="true">2017-05-21</time> :: <span class="tags"><a href="/tags/meta.html">meta</a>, <a href="/tags/scheme.html">scheme</a></span></p>
-    <p class='authors'>By: <span class="authors">Pookleblinky</span></p>
-  </header>
-
-<p>I made a Frog branch, init&rsquo;d a frog instance, and am now configuring it a bit before attempting to push it to the main site. Dunno exactly how the switch will go, but I can tell it&rsquo;s already a lot nicer than Jekyll.</p>
-  <footer>
-    <a href='/2017/05/frog.html'>&hellip; more &hellip;</a>
-  </footer>
 </article>
 <footer>
  <ul class="pagination">
