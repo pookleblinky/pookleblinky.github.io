@@ -1,6 +1,6 @@
     Title: Installing Stack
     Date: 2017-06-11T06:05:30
-    Tags: yakshaving, dev-environment, haskell 
+    Tags: yakshaving, dev environment, haskell 
 
 I'm running Crouton, which makes some things difficult and others
 outright cartoonish. Here is what was involved in getting Stack to

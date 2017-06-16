@@ -1,6 +1,6 @@
     Title: workout.org
     Date: 2017-06-16T06:35:00
-    Tags: org-mode, fitness
+    Tags: orgmode, fitness
 
 I believe that org-mode will drive you mad if you try to use more than
 the bare minimum of features necessary for what you need to do.
