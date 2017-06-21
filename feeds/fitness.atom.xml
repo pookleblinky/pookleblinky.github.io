@@ -4,7 +4,47 @@
  <link rel="self" href="http://pookleblinky.github.io/feeds/fitness.atom.xml" />
  <link href="http://pookleblinky.github.io/tags/fitness.html" />
  <id>urn:http-pookleblinky-github-io:-tags-fitness-html</id>
- <updated>2017-06-16T10:35:00Z</updated>
+ <updated>2017-06-21T20:44:46Z</updated>
+ <entry>
+  <title type="text">My workout routine</title>
+  <link rel="alternate" href="http://pookleblinky.github.io/2017/06/my-workout-routine.html?utm_source=fitness&amp;utm_medium=Atom" />
+  <id>urn:http-pookleblinky-github-io:-2017-06-my-workout-routine-html</id>
+  <published>2017-06-21T20:44:46Z</published>
+  <updated>2017-06-21T20:44:46Z</updated>
+  <author>
+   <name>Pookleblinky</name></author>
+  <content type="html">
+&lt;pre&gt;
+    | Day   | Type        | Main  | Secondary      | Assistance                                  | Strongman    |
+    | Mon   | Heavy Upper | Bench | Row            | kettlebell pullups kroc rows dumbbell bench | loaded carry |
+    | Tues  | Heavy lower | Dead  | Squat          | kettlebell Lunges                           |              |
+    | Wed   |             | OFF   |                |                                             |              |
+    | thurs | Upper       | OHP   | Rows           | kettlebell Bands                            | Loaded carry |
+    | fri   | Lower       | Squat | Ruck Complexes | kettlebell Sprints                          |              |
+    | sat   |             | OFF   |                |                                             |              |
+    | Sun   |             | OFF   |                |                                             |              |&lt;/pre&gt;
+
+&lt;p&gt;Each day has a main lift, a secondary lift, an assistance, and a strongman thing. Assistances don&amp;rsquo;t matter much. I could technically do whatever the hell I want after main and secondary, but I prefer to only have one or two other things mixed in. The best assistance is the movement itself, after all. I&amp;rsquo;ll throw in the listed assistances, and maybe something else if I feel like it.&lt;/p&gt;
+
+&lt;p&gt;Secondary lifts are generally BBB-style sets: lower intensity, higher rep range. I prefer this, it gives a better sense of balance to a workout and to the week.&lt;/p&gt;
+
+&lt;p&gt;Everything is a multijoint compound movement, and I try to keep the ratio of push to pull as close to 1:1 as possible, to the point of doing more pushes than pulls.&lt;/p&gt;
+
+&lt;p&gt;Each workout is structured in the form of giant sets: main, assistance, secondary, rinse and repeat. Rest in between giant sets.&lt;/p&gt;
+
+&lt;p&gt;Mondays are heavy uppers: heavy bench, heavy rows, finished by kroc rows. Loaded carries.&lt;/p&gt;
+
+&lt;p&gt;Tuesdays: heavy lower: heavy deadlift, BBB-style squats, finished by lunges. Squats after the deadlift sets, this lets me get lower back volume without increasing deadlift volume to the point where it&amp;rsquo;d become risky and too draining.&lt;/p&gt;
+
+&lt;p&gt;Thursdays: Upper: heavy OHP, BBB-style rows. Loaded carries.&lt;/p&gt;
+
+&lt;p&gt;Fridays: lower: squats, and ruck/complexes. A lot of people would put the 2 day rest after deadlift, but a lot of people also don&amp;rsquo;t ruck after doing heavy squats. Fridays are the days I wish I had a prowler.&lt;/p&gt;
+
+&lt;p&gt;Squats: twice a week. One heavy, one not.&lt;/p&gt;
+
+&lt;p&gt;Rows: twice a week. One heavy, one not.&lt;/p&gt;
+
+&lt;p&gt;This routine gives me a nice balance between push/pull, uses every basic human movement, hits each muscle group with sufficient frequency, and provides enough recovery. It&amp;rsquo;s also flexible enough to allow me to plop new things in without changing too much: I could plug in almost any kind of periodization, cycle out deadlifts every other week with something else, adopt 531 or such, and really not alter the whole thing.&lt;/p&gt;</content></entry>
  <entry>
   <title type="text">workout.org</title>
   <link rel="alternate" href="http://pookleblinky.github.io/2017/06/workout-org.html?utm_source=fitness&amp;utm_medium=Atom" />

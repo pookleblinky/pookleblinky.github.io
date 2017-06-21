@@ -117,6 +117,47 @@
 
           <article>
   <header>
+    <h2><a href='/2017/06/my-workout-routine.html'>My workout routine</a></h2>
+    <p class='date-and-tags'>
+<time datetime="2017-06-21" pubdate="true">2017-06-21</time> :: <span class="tags"><a href="/tags/fitness.html">fitness</a></span></p>
+    <p class='authors'>By: <span class="authors">Pookleblinky</span></p>
+  </header>
+
+<pre>
+    | Day   | Type        | Main  | Secondary      | Assistance                                  | Strongman    |
+    | Mon   | Heavy Upper | Bench | Row            | kettlebell pullups kroc rows dumbbell bench | loaded carry |
+    | Tues  | Heavy lower | Dead  | Squat          | kettlebell Lunges                           |              |
+    | Wed   |             | OFF   |                |                                             |              |
+    | thurs | Upper       | OHP   | Rows           | kettlebell Bands                            | Loaded carry |
+    | fri   | Lower       | Squat | Ruck Complexes | kettlebell Sprints                          |              |
+    | sat   |             | OFF   |                |                                             |              |
+    | Sun   |             | OFF   |                |                                             |              |</pre>
+
+<p>Each day has a main lift, a secondary lift, an assistance, and a strongman thing. Assistances don&rsquo;t matter much. I could technically do whatever the hell I want after main and secondary, but I prefer to only have one or two other things mixed in. The best assistance is the movement itself, after all. I&rsquo;ll throw in the listed assistances, and maybe something else if I feel like it.</p>
+
+<p>Secondary lifts are generally BBB-style sets: lower intensity, higher rep range. I prefer this, it gives a better sense of balance to a workout and to the week.</p>
+
+<p>Everything is a multijoint compound movement, and I try to keep the ratio of push to pull as close to 1:1 as possible, to the point of doing more pushes than pulls.</p>
+
+<p>Each workout is structured in the form of giant sets: main, assistance, secondary, rinse and repeat. Rest in between giant sets.</p>
+
+<p>Mondays are heavy uppers: heavy bench, heavy rows, finished by kroc rows. Loaded carries.</p>
+
+<p>Tuesdays: heavy lower: heavy deadlift, BBB-style squats, finished by lunges. Squats after the deadlift sets, this lets me get lower back volume without increasing deadlift volume to the point where it&rsquo;d become risky and too draining.</p>
+
+<p>Thursdays: Upper: heavy OHP, BBB-style rows. Loaded carries.</p>
+
+<p>Fridays: lower: squats, and ruck/complexes. A lot of people would put the 2 day rest after deadlift, but a lot of people also don&rsquo;t ruck after doing heavy squats. Fridays are the days I wish I had a prowler.</p>
+
+<p>Squats: twice a week. One heavy, one not.</p>
+
+<p>Rows: twice a week. One heavy, one not.</p>
+
+<p>This routine gives me a nice balance between push/pull, uses every basic human movement, hits each muscle group with sufficient frequency, and provides enough recovery. It&rsquo;s also flexible enough to allow me to plop new things in without changing too much: I could plug in almost any kind of periodization, cycle out deadlifts every other week with something else, adopt 531 or such, and really not alter the whole thing.</p>
+
+</article>
+<article>
+  <header>
     <h2><a href='/2017/06/workout-org.html'>workout.org</a></h2>
     <p class='date-and-tags'>
 <time datetime="2017-06-16" pubdate="true">2017-06-16</time> :: <span class="tags"><a href="/tags/orgmode.html">orgmode</a>, <a href="/tags/fitness.html">fitness</a></span></p>
@@ -393,31 +434,6 @@ DEADLINE: &lt;2017-06-19 Mon +1w&gt;</code></pre>
 <p>You code enough to pass the tests, then submit. You can keep tweaking your solution, and keep submitting it. On your dashboard, you&rsquo;ll be able to see how your solution has evolved over time. You can also look at how other people solved the problem, discuss solutions, etc.</p>
 
 <p>Exercism, with its emphasis on creating programs and then discussing them, is an even better way to introduce a language than a standard koan runner. Especially considering that if you already know the language, instead of solving the exercises you can easily submit new ones for others to solve.</p>
-
-</article>
-<article>
-  <header>
-    <h2><a href='/2017/05/git-koans.html'>Git koans</a></h2>
-    <p class='date-and-tags'>
-<time datetime="2017-05-21" pubdate="true">2017-05-21</time> :: <span class="tags"><a href="/tags/git.html">git</a>, <a href="/tags/coding.html">coding</a>, <a href="/tags/rant.html">rant</a></span></p>
-    <p class='authors'>By: <span class="authors">Pookleblinky</span></p>
-  </header>
-
-<p>Git Koans don&rsquo;t really exist. I can&rsquo;t be arsed to make it, though. There are some anecdotes called Git Koans, but as far as I can tell there is nothing similar to Clojure/Ruby Koans where you get hands-on experience fixing things incrementally, from tiny mistakes all the way up the ladder.</p>
-
-<p>Basically: &ldquo;Here&rsquo;s broken shit. Fix it.&rdquo; &ldquo;Yay, you fixed it. Here&rsquo;s more broken shit. Fix it.&rdquo; Turn on continuous integration and use post-commit hooks as the koan runner. Eventually, you fix all the problems in the broken repo.</p>
-
-<p>It actually wouldn&rsquo;t be very hard. You can pretty much use any kind of make system to build a repo then fuck it up per order. The result would be hands-on experience fixing fuckups in git, from small to huge. Hell: a joker shell script that takes all the commands used to evolve a repo, and randomly inserts typos and wrong commands to fuck it up (Maybe just swap the entered command with one which is often accidentally typed instead). &ldquo;Here&rsquo;s a fork of Foo that&rsquo;s been utterly fucked. Walk through its history and unfuck it.&rdquo;</p>
-
-<p>You could also do local/remote fuckups pretty easily too. Have a shell script that purposely messes up upstream/downstream relations, purposely screws up a merge, etc. Nightmare mode: multiple remotes are created, each randomly screwed up to simulate others trying, unsuccessfully, to fix their own messed up repos.</p>
-
-<p>As far as I can tell, this doesn&rsquo;t exist. The only time you&rsquo;re ever fixing a fuckup is in actual goddamn repos during your job. The <em>only</em> time you will ever unfuck an arbitrarily broken repo is when your ass depends on it.</p>
-
-<p>This means that for most people, git is a <a href="https://people.csail.mit.edu/sperezde/oopsla16.pdf">cargo cult</a>. You don&rsquo;t know how to unfuck things, you&rsquo;re doing shit like cp -R repo repo.old. Imagine if you wrote code this way: the <em>only</em> time you ever fix bugs is in production code. The only time you ever fix a bug is when your ass is on the line. You&rsquo;d also do cargo cult bullshit. You&rsquo;d be that happy asshole sloppily commenting out lines of code to see what&rsquo;s wrong. In $Lang the Hard Way style tutorials, it&rsquo;s heavily emphasized that you should break stuff in order to learn what happens, and how to fix it when you do inevitably do it by accident. Yet, I would put money on the bet that the vast majority of git users have never purposely broken a repo in order to learn how to fix it. How many purposely messed up a commit or 3 in order to get hands-on experience with git reflog? How many intentionally committed to the wrong branch so they could learn how to stash pop. How many purposely introduced a painful merge conflict in order to learn the right (painless) way to resolve it? Purposely broke the build in order to learn how to use bisect?</p>
-
-<p>In code, it&rsquo;s unthinkable that you would have no experience of fixing bugs outside of &ldquo;we need this fixed yesterday&rdquo; situations. Yet with git, that&rsquo;s the case. No experience, at all, of unfucking repos that you don&rsquo;t depend on for rent or whatever. The average git user has no idea how to fix mistakes they make, and every mistake they do have to fix is only ever on a real repo.</p>
-
-<p>Look at <a href="http://ohshitgit.com/">Oh Shit Git</a>. It lists very common mistakes, in plain English, and explains how to fix them. I guarantee that the vast majority of git users have never <em>purposely</em> made those mistakes in order to see how to fix them. For many, the first time they have to fix a mistake, that mistake is new to them and they end up on ohshitgit or stackoverflow typing commands that may as well be mystic incantations.</p>
 
 </article>
 <footer>

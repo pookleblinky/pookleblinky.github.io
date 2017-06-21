@@ -11,4 +11,5 @@ http://pookleblinky.github.io/2017/05/frog.html
 http://pookleblinky.github.io/2017/05/clojure-rant-2.html
 http://pookleblinky.github.io/2017/05/spinning-it-up.html
 http://pookleblinky.github.io/2017/05/first-post.html
+http://pookleblinky.github.io/2017/06/my-workout-routine.html
 http://pookleblinky.github.io/About.html

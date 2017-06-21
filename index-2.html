@@ -113,6 +113,31 @@
 
           <article>
   <header>
+    <h2><a href='/2017/05/git-koans.html'>Git koans</a></h2>
+    <p class='date-and-tags'>
+<time datetime="2017-05-21" pubdate="true">2017-05-21</time> :: <span class="tags"><a href="/tags/git.html">git</a>, <a href="/tags/coding.html">coding</a>, <a href="/tags/rant.html">rant</a></span></p>
+    <p class='authors'>By: <span class="authors">Pookleblinky</span></p>
+  </header>
+
+<p>Git Koans don&rsquo;t really exist. I can&rsquo;t be arsed to make it, though. There are some anecdotes called Git Koans, but as far as I can tell there is nothing similar to Clojure/Ruby Koans where you get hands-on experience fixing things incrementally, from tiny mistakes all the way up the ladder.</p>
+
+<p>Basically: &ldquo;Here&rsquo;s broken shit. Fix it.&rdquo; &ldquo;Yay, you fixed it. Here&rsquo;s more broken shit. Fix it.&rdquo; Turn on continuous integration and use post-commit hooks as the koan runner. Eventually, you fix all the problems in the broken repo.</p>
+
+<p>It actually wouldn&rsquo;t be very hard. You can pretty much use any kind of make system to build a repo then fuck it up per order. The result would be hands-on experience fixing fuckups in git, from small to huge. Hell: a joker shell script that takes all the commands used to evolve a repo, and randomly inserts typos and wrong commands to fuck it up (Maybe just swap the entered command with one which is often accidentally typed instead). &ldquo;Here&rsquo;s a fork of Foo that&rsquo;s been utterly fucked. Walk through its history and unfuck it.&rdquo;</p>
+
+<p>You could also do local/remote fuckups pretty easily too. Have a shell script that purposely messes up upstream/downstream relations, purposely screws up a merge, etc. Nightmare mode: multiple remotes are created, each randomly screwed up to simulate others trying, unsuccessfully, to fix their own messed up repos.</p>
+
+<p>As far as I can tell, this doesn&rsquo;t exist. The only time you&rsquo;re ever fixing a fuckup is in actual goddamn repos during your job. The <em>only</em> time you will ever unfuck an arbitrarily broken repo is when your ass depends on it.</p>
+
+<p>This means that for most people, git is a <a href="https://people.csail.mit.edu/sperezde/oopsla16.pdf">cargo cult</a>. You don&rsquo;t know how to unfuck things, you&rsquo;re doing shit like cp -R repo repo.old. Imagine if you wrote code this way: the <em>only</em> time you ever fix bugs is in production code. The only time you ever fix a bug is when your ass is on the line. You&rsquo;d also do cargo cult bullshit. You&rsquo;d be that happy asshole sloppily commenting out lines of code to see what&rsquo;s wrong. In $Lang the Hard Way style tutorials, it&rsquo;s heavily emphasized that you should break stuff in order to learn what happens, and how to fix it when you do inevitably do it by accident. Yet, I would put money on the bet that the vast majority of git users have never purposely broken a repo in order to learn how to fix it. How many purposely messed up a commit or 3 in order to get hands-on experience with git reflog? How many intentionally committed to the wrong branch so they could learn how to stash pop. How many purposely introduced a painful merge conflict in order to learn the right (painless) way to resolve it? Purposely broke the build in order to learn how to use bisect?</p>
+
+<p>In code, it&rsquo;s unthinkable that you would have no experience of fixing bugs outside of &ldquo;we need this fixed yesterday&rdquo; situations. Yet with git, that&rsquo;s the case. No experience, at all, of unfucking repos that you don&rsquo;t depend on for rent or whatever. The average git user has no idea how to fix mistakes they make, and every mistake they do have to fix is only ever on a real repo.</p>
+
+<p>Look at <a href="http://ohshitgit.com/">Oh Shit Git</a>. It lists very common mistakes, in plain English, and explains how to fix them. I guarantee that the vast majority of git users have never <em>purposely</em> made those mistakes in order to see how to fix them. For many, the first time they have to fix a mistake, that mistake is new to them and they end up on ohshitgit or stackoverflow typing commands that may as well be mystic incantations.</p>
+
+</article>
+<article>
+  <header>
     <h2><a href='/2017/05/frog.html'>Frog</a></h2>
     <p class='date-and-tags'>
 <time datetime="2017-05-21" pubdate="true">2017-05-21</time> :: <span class="tags"><a href="/tags/meta.html">meta</a>, <a href="/tags/scheme.html">scheme</a></span></p>
