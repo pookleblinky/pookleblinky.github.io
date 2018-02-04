@@ -6,7 +6,7 @@
     <title>Mistake Not</title>
     <meta name="description" content="Mistake Not">
     <meta name="author"      content="Pookleblinky">
-    <meta name="keywords"    content="yakshaving, resources, coding, scheme, fitness, meta, all, git, rant, orgmode, workflow, clojure, languages, learning, emacs, haskell, dev environment">
+    <meta name="keywords"    content="yakshaving, resources, coding, scheme, fitness, meta, all, racket, git, rant, haskell, orgmode, workflow, clojure, languages, learning, flipism, emacs, dev environment">
     <meta name="viewport"    content="width=device-width, initial-scale=1.0">
     <link rel="icon"      href="/favicon.ico">
     <link rel="canonical" href="http://pookleblinky.github.io/index.html">
@@ -69,6 +69,8 @@
 
 <li><a href="/tags/fitness.html">fitness</a></li>
 
+<li><a href="/tags/flipism.html">flipism</a></li>
+
 <li><a href="/tags/git.html">git</a></li>
 
 <li><a href="/tags/haskell.html">haskell</a></li>
@@ -80,6 +82,8 @@
 <li><a href="/tags/meta.html">meta</a></li>
 
 <li><a href="/tags/orgmode.html">orgmode</a></li>
+
+<li><a href="/tags/racket.html">racket</a></li>
 
 <li><a href="/tags/rant.html">rant</a></li>
 
@@ -116,6 +120,45 @@
 
 
           <article>
+  <header>
+    <h2><a href='/2018/02/lifescripts-stochastic-routines.html'>Lifescripts: Stochastic routines</a></h2>
+    <p class='date-and-tags'>
+<time datetime="2018-02-04" pubdate="true">2018-02-04</time> :: <span class="tags"><a href="/tags/flipism.html">flipism</a>, <a href="/tags/racket.html">racket</a>, <a href="/tags/coding.html">coding</a>, <a href="/tags/fitness.html">fitness</a></span></p>
+    <p class='authors'>By: <span class="authors">Pookleblinky</span></p>
+  </header>
+
+<p>Since November I&rsquo;ve been doing a form of intermittent fasting I created based on coinflips, that I call coinfasting.</p>
+
+<p>Every morning flip a coin. Heads, you eat, tails you fast.</p>
+
+<p>The expected value of heads over 7 days is 3.5, so it&rsquo;s identical in effect to a scheduled alternate day fast.</p>
+
+<p>The introduction of randomness makes things interesting: you can&rsquo;t just binge on heads days, because you may get a bunch in a row. And you can&rsquo;t restrict too much on fast days, because you may get a bunch of fast days in a row. This makes it easier to dial in on the right amount of calories, and lets the meals be a bit less absurd than on a normal ADF.</p>
+
+<p>After doing this a while, I love it. It feels fun and sustainable, and is easily modifiable. When I hit maintenance, I can such as switch heads to TDEE+15%, tails to TDEE&ndash;15% easily. The only actual daily habit that needs to be engrained is one cointoss.</p>
+
+<p>I decided to embrace more flipism.</p>
+
+<p>Each morning I do 20 minutes of cycling. On heads days I add another 30 minute afternoon cycling session. This gives a baseline of 140 minutes, which is the minimum recommended dose of cardio, and averages over time to another 105 minutes for a total of 245 minutes a week. Maximum: 350 minutes a week. This is a good amount of cardio, as the maximum effective dose of cardio is about 450 minutes a week (https://well.blogs.nytimes.com/2015/04/15/the-right-dose-of-exercise-for-a-longer-life/).</p>
+
+<p>So that&rsquo;s both calories and LISS out of the way, with one coinflip.</p>
+
+<p>I then based my kettlebell on dice. After flipping the coin, roll 2d6 and multiply by a number to get the number of swings that day. I chose a multiplier of 10. On average, 70 swings a day, maximum 120. This is because any more swings right now would bite into my deficit too much. Later, I can toggle the amount based on the coinflip: heads 25, tails 10. This&rsquo;d bring me to a maximum of 300 swings a day, and an average of 210.</p>
+
+<p>So that&rsquo;s what I&rsquo;d been doing for a while. Some days I&rsquo;d physically flip a coin and roll dice, other days I&rsquo;d just ask my phone to do so.</p>
+
+<p>I decided to automate this.</p>
+
+<p>I created a git repo called Lifescripts, and began making small racket programs to at first simply do what I&rsquo;m already doing.</p>
+
+<p>Now I can simultaneously flip and roll for the day with one command.</p>
+
+<p>The git repo is here: https://github.com/pookleblinky/lifescripts</p>
+
+<p>I then added a script to decide whether to engage in argument, a script to decide whether to cuss. One to decide the music of the day, one to decide which topic to boost for the day. A script to decide whether to refactor or write new code. One to assign a random small task like doing kettlebell swings or clean something.</p>
+
+</article>
+<article>
   <header>
     <h2><a href='/2017/06/my-workout-routine.html'>My workout routine</a></h2>
     <p class='date-and-tags'>
@@ -419,21 +462,6 @@ DEADLINE: &lt;2017-06-19 Mon +1w&gt;</code></pre>
 <p>I figure as long as I keep things structured, push yakshaving out of the way into its own activity (&ldquo;today I&rsquo;m gonna get vim to work better with lfe&rdquo;), and avoid temptation, I&rsquo;ll have a much nicer time than my usual habits provide. Then, I&rsquo;ll actually get stuff done, comprehensibly, instead of amassing largely useless knowledge.</p>
 
 <p>This blog is going to be part of my workflow, forcing me to maintain a coherency which is usually lost reinventing a local PLEAC.</p>
-
-</article>
-<article>
-  <header>
-    <h2><a href='/2017/05/exercism.html'>Exercism</a></h2>
-    <p class='date-and-tags'>
-<time datetime="2017-05-23" pubdate="true">2017-05-23</time> :: <span class="tags"><a href="/tags/resources.html">resources</a></span></p>
-    <p class='authors'>By: <span class="authors">Pookleblinky</span></p>
-  </header>
-
-<p>On #Racket, samth linked to <a href="http://exercism.io/languages/racket">Exercism</a>, a wonderful analog to $LANG Koans. Each exercise is a basic, small program which you code by satisfying the unit tests. Unlike, say, Clojure Koans, <a href="http://exercism.io/languages/clojure">the Clojure Track of Exercism</a> has you create 58 programs of various degrees of complexity, rather than a running through individual test assertions.</p>
-
-<p>You code enough to pass the tests, then submit. You can keep tweaking your solution, and keep submitting it. On your dashboard, you&rsquo;ll be able to see how your solution has evolved over time. You can also look at how other people solved the problem, discuss solutions, etc.</p>
-
-<p>Exercism, with its emphasis on creating programs and then discussing them, is an even better way to introduce a language than a standard koan runner. Especially considering that if you already know the language, instead of solving the exercises you can easily submit new ones for others to solve.</p>
 
 </article>
 <footer>

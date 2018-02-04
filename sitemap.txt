@@ -3,6 +3,7 @@ http://pookleblinky.github.io/2017/05/orgmode.html
 http://pookleblinky.github.io/2017/05/clojure-annoyances-1.html
 http://pookleblinky.github.io/2017/06/org-mode-and-yakshaving.html
 http://pookleblinky.github.io/2017/05/org-mode-and-language-study.html
+http://pookleblinky.github.io/2018/02/lifescripts-stochastic-routines.html
 http://pookleblinky.github.io/2017/06/workout-org.html
 http://pookleblinky.github.io/2017/05/exercism.html
 http://pookleblinky.github.io/2017/05/git-koans.html
