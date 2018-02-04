@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+ <title type="text">Mistake Not: Posts tagged 'flipism'</title>
+ <link rel="self" href="http://pookleblinky.github.io/feeds/flipism.atom.xml" />
+ <link href="http://pookleblinky.github.io/tags/flipism.html" />
+ <id>urn:http-pookleblinky-github-io:-tags-flipism-html</id>
+ <updated>2018-02-04T09:36:58Z</updated>
+ <entry>
+  <title type="text">Lifescripts: Stochastic routines</title>
+  <link rel="alternate" href="http://pookleblinky.github.io/2018/02/lifescripts-stochastic-routines.html?utm_source=flipism&amp;utm_medium=Atom" />
+  <id>urn:http-pookleblinky-github-io:-2018-02-lifescripts-stochastic-routines-html</id>
+  <published>2018-02-04T09:36:58Z</published>
+  <updated>2018-02-04T09:36:58Z</updated>
+  <author>
+   <name>Pookleblinky</name></author>
+  <content type="html">
+&lt;p&gt;Since November I&amp;rsquo;ve been doing a form of intermittent fasting I created based on coinflips, that I call coinfasting.&lt;/p&gt;
+
+&lt;p&gt;Every morning flip a coin. Heads, you eat, tails you fast.&lt;/p&gt;
+
+&lt;p&gt;The expected value of heads over 7 days is 3.5, so it&amp;rsquo;s identical in effect to a scheduled alternate day fast.&lt;/p&gt;
+
+&lt;p&gt;The introduction of randomness makes things interesting: you can&amp;rsquo;t just binge on heads days, because you may get a bunch in a row. And you can&amp;rsquo;t restrict too much on fast days, because you may get a bunch of fast days in a row. This makes it easier to dial in on the right amount of calories, and lets the meals be a bit less absurd than on a normal ADF.&lt;/p&gt;
+
+&lt;p&gt;After doing this a while, I love it. It feels fun and sustainable, and is easily modifiable. When I hit maintenance, I can such as switch heads to TDEE+15%, tails to TDEE&amp;ndash;15% easily. The only actual daily habit that needs to be engrained is one cointoss.&lt;/p&gt;
+
+&lt;p&gt;I decided to embrace more flipism.&lt;/p&gt;
+
+&lt;p&gt;Each morning I do 20 minutes of cycling. On heads days I add another 30 minute afternoon cycling session. This gives a baseline of 140 minutes, which is the minimum recommended dose of cardio, and averages over time to another 105 minutes for a total of 245 minutes a week. Maximum: 350 minutes a week. This is a good amount of cardio, as the maximum effective dose of cardio is about 450 minutes a week (https://well.blogs.nytimes.com/2015/04/15/the-right-dose-of-exercise-for-a-longer-life/).&lt;/p&gt;
+
+&lt;p&gt;So that&amp;rsquo;s both calories and LISS out of the way, with one coinflip.&lt;/p&gt;
+
+&lt;p&gt;I then based my kettlebell on dice. After flipping the coin, roll 2d6 and multiply by a number to get the number of swings that day. I chose a multiplier of 10. On average, 70 swings a day, maximum 120. This is because any more swings right now would bite into my deficit too much. Later, I can toggle the amount based on the coinflip: heads 25, tails 10. This&amp;rsquo;d bring me to a maximum of 300 swings a day, and an average of 210.&lt;/p&gt;
+
+&lt;p&gt;So that&amp;rsquo;s what I&amp;rsquo;d been doing for a while. Some days I&amp;rsquo;d physically flip a coin and roll dice, other days I&amp;rsquo;d just ask my phone to do so.&lt;/p&gt;
+
+&lt;p&gt;I decided to automate this.&lt;/p&gt;
+
+&lt;p&gt;I created a git repo called Lifescripts, and began making small racket programs to at first simply do what I&amp;rsquo;m already doing.&lt;/p&gt;
+
+&lt;p&gt;Now I can simultaneously flip and roll for the day with one command.&lt;/p&gt;
+
+&lt;p&gt;The git repo is here: https://github.com/pookleblinky/lifescripts&lt;/p&gt;
+
+&lt;p&gt;I then added a script to decide whether to engage in argument, a script to decide whether to cuss. One to decide the music of the day, one to decide which topic to boost for the day. A script to decide whether to refactor or write new code. One to assign a random small task like doing kettlebell swings or clean something.&lt;/p&gt;</content></entry></feed>
