@@ -2,12 +2,11 @@
     Date: 2018-02-04T04:36:58
     Tags: flipism, racket, coding, fitness
 Since November I've been doing a form of intermittent fasting I
-created based on coinflips, that I call coinfasting.
-
-Every morning flip a coin. Heads, you eat, tails you fast.
-
-The expected value of heads over 7 days is 3.5, so it's identical in
+created based on coinflips, that I call coinfasting. Every morning flip a coin.
+Heads, you eat, tails you fast. The expected value of heads over 7 days is 3.5, so it's identical in
 effect to a scheduled alternate day fast.
+
+(As an aside: since August I've lost about 22kg, or about 24% of my bodyweight.)
 
 The introduction of randomness makes things interesting: you can't
 just binge on heads days, because you may get a bunch in a row. And
@@ -29,7 +28,7 @@ minutes, which is the minimum recommended dose of cardio, and averages
 over time to another 105 minutes for a total of 245 minutes a
 week. Maximum: 350 minutes a week. This is a good amount of cardio, as
 the maximum effective dose of cardio is about 450 minutes a week
-(https://well.blogs.nytimes.com/2015/04/15/the-right-dose-of-exercise-for-a-longer-life/).
+[The Right Dose of Exercise for a Longer Life](https://well.blogs.nytimes.com/2015/04/15/the-right-dose-of-exercise-for-a-longer-life/).
 
 So that's both calories and LISS out of the way, with one coinflip.
 
@@ -51,7 +50,7 @@ programs to at first simply do what I'm already doing.
 
 Now I can simultaneously flip and roll for the day with one command.
 
-The git repo is here: https://github.com/pookleblinky/lifescripts
+The git repo is here: [pookleblinky/lifescripts](https://github.com/pookleblinky/lifescripts)
 
 I then added a script to decide whether to engage in argument, a
 script to decide whether to cuss. One to decide the music of the day,

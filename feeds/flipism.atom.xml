@@ -14,11 +14,9 @@
   <author>
    <name>Pookleblinky</name></author>
   <content type="html">
-&lt;p&gt;Since November I&amp;rsquo;ve been doing a form of intermittent fasting I created based on coinflips, that I call coinfasting.&lt;/p&gt;
+&lt;p&gt;Since November I&amp;rsquo;ve been doing a form of intermittent fasting I created based on coinflips, that I call coinfasting. Every morning flip a coin. Heads, you eat, tails you fast. The expected value of heads over 7 days is 3.5, so it&amp;rsquo;s identical in effect to a scheduled alternate day fast.&lt;/p&gt;
 
-&lt;p&gt;Every morning flip a coin. Heads, you eat, tails you fast.&lt;/p&gt;
-
-&lt;p&gt;The expected value of heads over 7 days is 3.5, so it&amp;rsquo;s identical in effect to a scheduled alternate day fast.&lt;/p&gt;
+&lt;p&gt;(As an aside: since August I&amp;rsquo;ve lost about 22kg, or about 24% of my bodyweight.)&lt;/p&gt;
 
 &lt;p&gt;The introduction of randomness makes things interesting: you can&amp;rsquo;t just binge on heads days, because you may get a bunch in a row. And you can&amp;rsquo;t restrict too much on fast days, because you may get a bunch of fast days in a row. This makes it easier to dial in on the right amount of calories, and lets the meals be a bit less absurd than on a normal ADF.&lt;/p&gt;
 
@@ -26,7 +24,7 @@
 
 &lt;p&gt;I decided to embrace more flipism.&lt;/p&gt;
 
-&lt;p&gt;Each morning I do 20 minutes of cycling. On heads days I add another 30 minute afternoon cycling session. This gives a baseline of 140 minutes, which is the minimum recommended dose of cardio, and averages over time to another 105 minutes for a total of 245 minutes a week. Maximum: 350 minutes a week. This is a good amount of cardio, as the maximum effective dose of cardio is about 450 minutes a week (https://well.blogs.nytimes.com/2015/04/15/the-right-dose-of-exercise-for-a-longer-life/).&lt;/p&gt;
+&lt;p&gt;Each morning I do 20 minutes of cycling. On heads days I add another 30 minute afternoon cycling session. This gives a baseline of 140 minutes, which is the minimum recommended dose of cardio, and averages over time to another 105 minutes for a total of 245 minutes a week. Maximum: 350 minutes a week. This is a good amount of cardio, as the maximum effective dose of cardio is about 450 minutes a week &lt;a href="https://well.blogs.nytimes.com/2015/04/15/the-right-dose-of-exercise-for-a-longer-life/"&gt;The Right Dose of Exercise for a Longer Life&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;So that&amp;rsquo;s both calories and LISS out of the way, with one coinflip.&lt;/p&gt;
 
@@ -40,6 +38,6 @@
 
 &lt;p&gt;Now I can simultaneously flip and roll for the day with one command.&lt;/p&gt;
 
-&lt;p&gt;The git repo is here: https://github.com/pookleblinky/lifescripts&lt;/p&gt;
+&lt;p&gt;The git repo is here: &lt;a href="https://github.com/pookleblinky/lifescripts"&gt;pookleblinky/lifescripts&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;I then added a script to decide whether to engage in argument, a script to decide whether to cuss. One to decide the music of the day, one to decide which topic to boost for the day. A script to decide whether to refactor or write new code. One to assign a random small task like doing kettlebell swings or clean something.&lt;/p&gt;</content></entry></feed>
